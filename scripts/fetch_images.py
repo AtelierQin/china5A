@@ -10,6 +10,7 @@ import os
 INPUT_FILE = 'src/attractions.json'
 OUTPUT_FILE = 'src/attractions.json'
 WIKI_API_URL = "https://zh.wikipedia.org/w/api.php"
+COMMONS_API_URL = "https://commons.wikimedia.org/w/api.php"
 USER_AGENT = 'China5AExplorer/1.0 (https://github.com/yourusername/china5a; contact@example.com)'
 
 def clean_name(name):
@@ -38,6 +39,59 @@ def clean_name(name):
             
     return cleaned.strip()
 
+def search_commons_image(term):
+    """Search for files in Wikimedia Commons"""
+    params = {
+        "action": "query",
+        "format": "json",
+        "list": "search",
+        "srsearch": f"filetype:bitmap {term}",
+        "srnamespace": 6, # File namespace
+        "utf8": 1,
+        "srlimit": 1
+    }
+    query_string = urllib.parse.urlencode(params)
+    url = f"{COMMONS_API_URL}?{query_string}"
+    
+    req = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
+    context = ssl._create_unverified_context()
+    try:
+        html = urllib.request.urlopen(req, context=context, timeout=10).read()
+        data = json.loads(html.decode())
+        search_results = data.get("query", {}).get("search", [])
+        if search_results:
+            title = search_results[0]["title"]
+            return get_commons_image_url(title)
+    except Exception as e:
+        print(f"Error Commons Search {term}: {e}")
+    return None
+
+def get_commons_image_url(title):
+    params = {
+        "action": "query",
+        "format": "json",
+        "prop": "imageinfo",
+        "iiprop": "url",
+        "iiurlwidth": 800,
+        "titles": title
+    }
+    query_string = urllib.parse.urlencode(params)
+    url = f"{COMMONS_API_URL}?{query_string}"
+    
+    req = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
+    context = ssl._create_unverified_context()
+    try:
+        html = urllib.request.urlopen(req, context=context, timeout=10).read()
+        data = json.loads(html.decode())
+        pages = data.get("query", {}).get("pages", {})
+        for page_id, page_data in pages.items():
+            if "imageinfo" in page_data and len(page_data["imageinfo"]) > 0:
+                info = page_data["imageinfo"][0]
+                return info.get("thumburl", info.get("url"))
+    except Exception as e:
+        print(f"Error Commons URL {title}: {e}")
+    return None
+
 def get_wiki_image(term, original_name=None):
     """
     Fetch image URL from Wikipedia given a search term.
@@ -53,8 +107,7 @@ def get_wiki_image(term, original_name=None):
     query_string = urllib.parse.urlencode(params)
     url = f"{WIKI_API_URL}?{query_string}"
     
-    req = urllib.request.Request(url)
-    req.add_header('User-Agent', USER_AGENT)
+    req = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
     
     try:
         # Create a context that doesn't verify SSL certificates
@@ -110,6 +163,15 @@ def main():
         
         image_url = get_wiki_image(cleaned_name, original_name=name)
         
+        # Fallback to Commons API search
+        if not image_url:
+             print(f"  -> Wiki article image failed, searching Commons...")
+             # Search Commons using cleaned name
+             image_url = search_commons_image(cleaned_name)
+             if not image_url and cleaned_name != name:
+                 # Try with original full name
+                 image_url = search_commons_image(name)
+
         if image_url:
             attraction['image'] = image_url
             updated_count += 1
