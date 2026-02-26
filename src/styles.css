@@ -1,0 +1,645 @@
+/* 🎨 Atelier Qin Design System (v1.0) Implementation */
+/* Signal over Noise. Density is Power. Grid is Law. */
+
+:root {
+    /* --- ZINC PALETTE --- */
+    --bg-void: #09090b;
+    /* Zinc 950 */
+    --bg-surface: #18181b;
+    /* Zinc 900 */
+    --bg-surface-t: rgba(24, 24, 27, 0.5);
+    /* Zinc 900 / 50% */
+    --bg-deep: rgba(0, 0, 0, 0.2);
+
+    --border-structure: #27272a;
+    /* Zinc 800 */
+    --border-active: #3f3f46;
+    /* Zinc 700 */
+    --border-subtle: rgba(255, 255, 255, 0.05);
+
+    --text-primary: #e4e4e7;
+    /* Zinc 200 */
+    --text-head: #ffffff;
+    /* White */
+    --text-secondary: #71717a;
+    /* Zinc 500 */
+
+    /* --- SIGNAL COLORS --- */
+    --signal-emerald: #10b981;
+    /* Success / Live */
+    --signal-emerald-dim: rgba(16, 185, 129, 0.1);
+    --signal-red: #ef4444;
+    /* Error / Defcon */
+    --signal-red-dim: rgba(239, 68, 68, 0.1);
+    --signal-amber: #f59e0b;
+    /* Warning / Build */
+    --signal-blue: #3b82f6;
+    /* Network / Link */
+    --signal-purple: #a855f7;
+    /* Magic */
+
+    /* --- TYPOGRAPHY --- */
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', 'Roboto Mono', monospace;
+
+    /* --- LAYOUT --- */
+    --grid-unit: 4px;
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+}
+
+/* --- RESET & BASE --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-void);
+    color: var(--text-primary);
+    height: 100vh;
+    overflow: hidden;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+/* --- UTILITIES --- */
+.font-mono {
+    font-family: var(--font-mono);
+}
+
+.text-xs {
+    font-size: 12px;
+}
+
+.text-xxs {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.text-secondary {
+    color: var(--text-secondary);
+}
+
+.text-emerald {
+    color: var(--signal-emerald);
+}
+
+.text-blue {
+    color: var(--signal-blue);
+}
+
+/* --- LAYOUT GRID --- */
+.grid-container {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    /* Increased density: 350px -> 320px */
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* --- HEADER MODULE --- */
+.header {
+    grid-column: 1 / -1;
+    background-color: var(--bg-surface);
+    border-bottom: 1px solid var(--border-structure);
+    padding: var(--spacing-md) var(--spacing-lg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Centered alignment for cleaner look */
+    z-index: 10;
+}
+
+.brand {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: -1px;
+    line-height: 1;
+    color: var(--text-head);
+    text-transform: uppercase;
+}
+
+.brand span {
+    color: var(--text-secondary);
+}
+
+.stats-container {
+    display: flex;
+    gap: var(--spacing-lg);
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.stat-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+}
+
+.stat-value {
+    font-family: var(--font-mono);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-head);
+    line-height: 1;
+}
+
+/* Signal Colors for Stats */
+#explored-count {
+    color: var(--signal-emerald);
+}
+
+#total-count {
+    color: var(--text-secondary);
+}
+
+#progress-percent {
+    color: var(--signal-blue);
+}
+
+/* --- SIDEBAR MODULE --- */
+.sidebar {
+    background-color: var(--bg-void);
+    /* Void background for deep contrast */
+    border-right: 1px solid var(--border-structure);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.sidebar-header {
+    padding: var(--spacing-md);
+    background-color: var(--bg-void);
+    border-bottom: 1px solid var(--border-structure);
+    /* decorative accent line logic would go here if not simple border */
+}
+
+.sidebar-header h2 {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sidebar-header h2::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: var(--signal-red);
+    /* Active signal */
+    border-radius: 50%;
+    box-shadow: 0 0 8px var(--signal-red-dim);
+}
+
+/* Search Input - Deep Void Style */
+.search-container {
+    margin-bottom: var(--spacing-sm);
+}
+
+.search-input {
+    width: 100%;
+    background-color: var(--bg-deep);
+    border: 1px solid var(--border-structure);
+    color: var(--text-primary);
+    padding: 8px 12px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    border-radius: 4px;
+    outline: none;
+    transition: all 0.2s;
+    text-transform: uppercase;
+}
+
+.search-input:focus {
+    border-color: var(--text-secondary);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.search-input::placeholder {
+    color: var(--border-active);
+}
+
+/* Filter Buttons - Signal Tags */
+.filter-controls {
+    display: flex;
+    gap: 6px;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 1px solid var(--border-structure);
+    color: var(--text-secondary);
+    padding: 4px 8px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.filter-btn:hover {
+    border-color: var(--text-secondary);
+    color: var(--text-primary);
+}
+
+.filter-btn.active {
+    background-color: var(--bg-surface);
+    border-color: var(--text-secondary);
+    color: var(--text-head);
+}
+
+/* List Items - Data Row Pattern */
+.attraction-list {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.list-item {
+    padding: 10px var(--spacing-md);
+    border-bottom: 1px solid var(--border-subtle);
+    cursor: pointer;
+    transition: background 0.15s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-item:hover {
+    background-color: var(--bg-surface);
+}
+
+.list-item.active {
+    background-color: var(--bg-surface);
+    border-left: 2px solid var(--signal-emerald);
+    /* Active Indicator */
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.item-name {
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--text-primary);
+}
+
+.item-location {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--text-secondary);
+}
+
+/* Status Indicator */
+.item-status {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--text-primary);
+    /* White/Zinc-200 for visibility */
+    opacity: 0.3;
+    /* Subtle but visible */
+}
+
+.list-item:hover .item-status {
+    opacity: 1;
+    /* Prominent on hover */
+    background-color: var(--text-head);
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+.list-item.visited .item-status {
+    background-color: var(--signal-emerald);
+    box-shadow: 0 0 6px var(--signal-emerald-dim);
+}
+
+/* --- MAP --- */
+.map-container {
+    background-color: #1a1a1a;
+    /* Fallback */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Dark Mode Map Filter */
+.leaflet-layer,
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out,
+.leaflet-control-attribution {
+    filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%) grayscale(20%);
+}
+
+/* Re-invert map controls if needed, but usually looks ok inverted */
+
+#map {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Custom Marker */
+.custom-marker {
+    background: transparent;
+}
+
+.marker-pin {
+    width: 12px;
+    height: 12px;
+    background-color: var(--signal-emerald);
+    border: 2px solid var(--bg-void);
+    /* Dark border for separation */
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--signal-emerald-dim);
+    transition: transform 0.2s;
+}
+
+.marker-pin.unvisited {
+    background-color: var(--text-head);
+    /* White for unvisited */
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.3);
+    box-shadow: none;
+}
+
+.marker-pin:hover {
+    transform: scale(1.5);
+    background-color: var(--signal-blue);
+    /* Hover highlight */
+}
+
+/* --- PREVIEW TOOLTIP --- */
+.leaflet-tooltip.custom-tooltip {
+    background: var(--bg-surface-t);
+    border: 1px solid var(--border-active);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: var(--text-head);
+    font-family: var(--font-sans);
+}
+
+/* Hide default leaflet tooltip arrow */
+.leaflet-tooltip.custom-tooltip::before,
+.leaflet-tooltip-top.custom-tooltip::before,
+.leaflet-tooltip-bottom.custom-tooltip::before,
+.leaflet-tooltip-left.custom-tooltip::before,
+.leaflet-tooltip-right.custom-tooltip::before {
+    display: none !important;
+}
+
+.preview-card {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.preview-id {
+    font-family: var(--font-mono);
+    color: var(--text-secondary);
+    font-size: 11px;
+}
+
+.preview-name {
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+/* --- MODAL (GLASSMORPHISM) --- */
+.modal {
+    margin: auto;
+    padding: 0;
+    border: none;
+    background: transparent;
+    max-width: 900px;
+    width: 90%;
+    color: var(--text-primary);
+}
+
+.modal::backdrop {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(4px);
+}
+
+.modal-content {
+    background: var(--bg-surface-t);
+    border: 1px solid var(--border-active);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.5);
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    border-radius: 4px;
+    /* Minimal radius */
+}
+
+.close-btn {
+    position: absolute;
+    top: var(--spacing-md);
+    right: var(--spacing-md);
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border-subtle);
+    color: var(--text-primary);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 20;
+    transition: all 0.2s;
+    font-family: var(--font-mono);
+}
+
+.close-btn:hover {
+    background: var(--signal-red);
+    border-color: var(--signal-red);
+    color: white;
+}
+
+.modal-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    width: 100%;
+}
+
+.modal-image {
+    border-right: 1px solid var(--border-subtle);
+    background: var(--bg-void);
+}
+
+.modal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+.modal-info {
+    padding: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modal-header {
+    margin-bottom: var(--spacing-lg);
+}
+
+.modal-id {
+    font-family: var(--font-mono);
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.05);
+    line-height: 0.8;
+    display: block;
+    margin-bottom: var(--spacing-sm);
+    letter-spacing: -4px;
+}
+
+.modal-title {
+    font-family: var(--font-sans);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-head);
+    margin-bottom: var(--spacing-xs);
+    letter-spacing: -0.5px;
+}
+
+.modal-location {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--signal-blue);
+    /* Accent */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.modal-location::before {
+    content: 'LOCATION:';
+    color: var(--text-secondary);
+}
+
+.modal-desc {
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--text-primary);
+    margin-top: var(--spacing-md);
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.modal-actions {
+    margin-top: var(--spacing-xl);
+}
+
+.action-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: transparent;
+    border: 1px solid var(--border-active);
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all 0.2s;
+}
+
+.action-btn:hover {
+    border-color: var(--signal-emerald);
+    color: var(--signal-emerald);
+    background: var(--signal-emerald-dim);
+}
+
+.action-btn.visited {
+    background-color: var(--signal-emerald);
+    border-color: var(--signal-emerald);
+    color: var(--bg-void);
+}
+
+/* Data Controls */
+.data-controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-subtle);
+}
+
+.action-btn-small {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-structure);
+    color: var(--text-secondary);
+    padding: 8px 0;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    /* tracking-widest */
+    border-radius: 2px;
+    transition: all 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-btn-small:hover {
+    border-color: var(--text-primary);
+    background: var(--border-structure);
+    color: var(--text-head);
+}
+
+/* Specific button variants */
+#export-btn:hover {
+    border-color: var(--signal-blue);
+    color: var(--signal-blue);
+    background: rgba(59, 130, 246, 0.1);
+}
+
+#import-btn:hover {
+    border-color: var(--signal-emerald);
+    color: var(--signal-emerald);
+    background: rgba(16, 185, 129, 0.1);
+}
