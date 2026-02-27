@@ -25,8 +25,8 @@ def load_csv(filepath):
 def main():
     # Load attributes
     current_data = load_json('src/attractions.json')
-    wiki_list = load_json('wiki_attractions.json')
-    poi_data = load_csv('scenic_poi.csv')
+    wiki_list = load_json('data/wiki_attractions.json')
+    poi_data = load_csv('data/scenic_poi.csv')
 
     current_names = {item['name'] for item in current_data}
     

@@ -94,7 +94,7 @@ attractions = [
 
 data = [{"name": name} for name in attractions]
 
-with open('data_5a.json', 'w', encoding='utf-8') as f:
+with open('data/data_5a.json', 'w', encoding='utf-8') as f:
     json.dump(data, f, ensure_ascii=False, indent=4)
     
 print(f"Updated data_5a.json with {len(data)} items.")

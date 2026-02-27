@@ -4,7 +4,7 @@ import difflib
 
 def analyze_matches():
     json_path = 'src/attractions.json'
-    csv_path = 'scenic_poi.csv'
+    csv_path = 'data/scenic_poi.csv'
     
     # Load JSON data - get missing names
     try:

@@ -118,8 +118,8 @@ def main():
     print("Loading data...")
     # 1. Load Data
     current_attractions = load_json('src/attractions.json')
-    official_list = load_json('data_5a.json')
-    poi_map = load_poi_data('scenic_poi.csv')
+    official_list = load_json('data/data_5a.json')
+    poi_map = load_poi_data('data/scenic_poi.csv')
     
     print(f"Loaded {len(current_attractions)} existing items.")
     print(f"Loaded {len(official_list)} official 5A items.")

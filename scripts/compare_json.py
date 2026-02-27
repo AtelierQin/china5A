@@ -25,8 +25,8 @@ def load_names(filepath):
     return set()
 
 def main():
-    local_data = load_names('data_5a.json')
-    wiki_data = load_names('wiki_attractions.json')
+    local_data = load_names('data/data_5a.json')
+    wiki_data = load_names('data/wiki_attractions.json')
     
     local_names = set(local_data.keys())
     wiki_names = set(wiki_data.keys())

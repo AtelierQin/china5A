@@ -2,7 +2,7 @@ from scripts.merge_data import load_poi_data, normalize_name, find_best_match
 
 def test_match():
     print("Loading valid POI data...")
-    poi_map = load_poi_data('scenic_poi.csv')
+    poi_map = load_poi_data('data/scenic_poi.csv')
     
     target = "乐山市峨眉山景区"
     print(f"\nTarget: {target}")

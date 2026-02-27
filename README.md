@@ -14,11 +14,13 @@ This project aims to convert the text-based list of China's 5A scenic spots into
 ## Project Structure
 
 ```
+├── data/                   # Raw JSON and CSV data files
 ├── docs/                   # Documentation (PRD, Design System)
 ├── scripts/                # Python scripts for data scraping and processing
-├── src/                    # Source code (assets, data)
+│   └── tests/              # Unit tests for data scripts
+├── src/                    # Frontend source code and assets (incl. attractions.json)
 ├── index.html              # Main application entry point
-├── data_5a.json            # Processed attraction data
+├── requirements.txt        # Python dependencies
 └── README.md               # This file
 ```
 

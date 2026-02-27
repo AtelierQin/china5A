@@ -159,7 +159,7 @@ def load_wiki_data(filepath):
     return all_names
 
 def main():
-    local_names = load_local_data('data_5a.json')
+    local_names = load_local_data('data/data_5a.json')
     try:
         wiki_names = load_wiki_data('wiki_content.html')
     except Exception as e:

@@ -17,8 +17,8 @@ def load_csv(path):
 def main():
     # 1. Load Data
     existing_data = load_json('src/attractions.json')
-    full_5a_list = load_json('data_5a.json')
-    poi_data = load_csv('scenic_poi.csv')
+    full_5a_list = load_json('data/data_5a.json')
+    poi_data = load_csv('data/scenic_poi.csv')
 
     # Convert POI data to a more searchable format
     # The CSV likely has 'name', 'lat', 'lng' or similar. 

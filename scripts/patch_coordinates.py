@@ -4,7 +4,7 @@ import os
 
 def patch_coordinates():
     json_path = 'src/attractions.json'
-    csv_path = 'scenic_poi.csv'
+    csv_path = 'data/scenic_poi.csv'
     
     # 1. Hardcoded coordinates AND Locations (Manual research)
     hardcoded_data = {
