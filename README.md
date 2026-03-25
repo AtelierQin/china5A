@@ -7,9 +7,10 @@ A minimalist interactive map application to visualize and track your visits to C
 This project aims to convert the text-based list of China's 5A scenic spots into an intuitive map visualization. It features a "Mission Control" aesthetic inspired by Swiss Style design, focusing on data density and clarity.
 
 ### Key Features
-- **Interactive Map**: Visualize all 300+ 5A attractions on a map.
-- **Progress Tracking**: Local storage-based tracking of visited locations. (Planned)
-- **Data Filtering**: Filter by province or status.
+- **Interactive Map**: Visualize all 300+ 5A attractions on a map using Leaflet.
+- **Progress Tracking**: Local storage-based tracking of visited locations.
+- **Data Export/Import**: Export and import your visited spots data as JSON.
+- **Data Filtering**: Search by name/province and filter by visited status.
 
 ## Project Structure
 
