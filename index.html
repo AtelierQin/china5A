@@ -46,9 +46,17 @@
                     <input type="text" id="search-input" class="search-input" placeholder="SEARCH PROVINCE / NAME">
                 </div>
                 <div class="filter-controls">
-                    <button class="filter-btn active" data-filter="all">ALL</button>
+                    <button class="filter-btn active" data-filter="all">ALL STATUS</button>
                     <button class="filter-btn" data-filter="visited">VISITED</button>
                     <button class="filter-btn" data-filter="unvisited">PLAN</button>
+                </div>
+                <!-- Category Filters -->
+                <div class="category-controls" style="display: flex; gap: 6px; margin-top: 8px;">
+                    <button class="category-btn active" data-category="all">ALL</button>
+                    <button class="category-btn" data-category="5A">CHINA 5A</button>
+                    <button class="category-btn" data-category="natgeo_world">WORLD 50</button>
+                    <button class="category-btn" data-category="natgeo_china">CHINA 50</button>
+                    <button class="category-btn" data-category="natgeo_225">DESTINATIONS 225</button>
                 </div>
                 <div class="data-controls">
                     <button class="action-btn-small" id="export-btn">EXPORT DATA</button>

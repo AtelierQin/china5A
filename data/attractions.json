@@ -37,20 +37,11 @@
   },
   {
     "id": 5,
-    "name": "八达岭长城（八达岭-慕田峪长城）",
+    "name": "八达岭-慕田峪长城",
     "location": "北京 北京",
     "lat": 40.43,
     "lng": 116.56,
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/%E5%85%AB%E8%BE%BE%E5%B2%AD%E9%95%BF%E5%9F%8E_-_panoramio.jpg/960px-%E5%85%AB%E8%BE%BE%E5%B2%AD%E9%95%BF%E5%9F%8E_-_panoramio.jpg",
-    "description": "位于北京北京的国家5A级旅游景区。"
-  },
-  {
-    "id": 6,
-    "name": "慕田峪长城旅游景区（八达岭-慕田峪长城）",
-    "location": "北京 北京",
-    "lat": 40.43,
-    "lng": 116.56,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Great_Wall_of_China%2C_Mutianyu%2C_Huairou_County%2C_China-10June2009.jpg/960px-Great_Wall_of_China%2C_Mutianyu%2C_Huairou_County%2C_China-10June2009.jpg",
     "description": "位于北京北京的国家5A级旅游景区。"
   },
   {
@@ -631,29 +622,11 @@
   },
   {
     "id": 71,
-    "name": "一大纪念馆（中国共产党一大·二大·四大纪念馆景区）",
+    "name": "中国共产党一大·二大·四大纪念馆景区",
     "location": "上海 上海",
     "lat": 31.22,
     "lng": 121.47,
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/2011_T%C5%8Dhoku_earthquake_and_tsunami_damage_Matsushima%2C_Miyagi.JPG/960px-2011_T%C5%8Dhoku_earthquake_and_tsunami_damage_Matsushima%2C_Miyagi.JPG",
-    "description": "位于中国的国家5A级旅游景区。"
-  },
-  {
-    "id": 72,
-    "name": "二大纪念馆（中国共产党一大·二大·四大纪念馆景区）",
-    "location": "上海 上海",
-    "lat": 31.23,
-    "lng": 121.46,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/NDL1309051_%E4%BA%8C%E4%BB%A3%E7%9B%AE%E5%A4%A7%E6%A0%A2%E8%8E%9A%E5%9B%A3%E5%8D%81%E9%83%8E.jpg/960px-NDL1309051_%E4%BA%8C%E4%BB%A3%E7%9B%AE%E5%A4%A7%E6%A0%A2%E8%8E%9A%E5%9B%A3%E5%8D%81%E9%83%8E.jpg",
-    "description": "位于中国的国家5A级旅游景区。"
-  },
-  {
-    "id": 73,
-    "name": "四大纪念馆（中国共产党一大·二大·四大纪念馆景区）",
-    "location": "上海 上海",
-    "lat": 31.26,
-    "lng": 121.48,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Shuihu.png",
     "description": "位于中国的国家5A级旅游景区。"
   },
   {
@@ -784,29 +757,11 @@
   },
   {
     "id": 88,
-    "name": "金山（金山·焦山·北固山旅游景区）",
+    "name": "金山·焦山·北固山旅游景区",
     "location": "江苏 镇江",
     "lat": 32.21,
     "lng": 119.45,
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Japanese_food_at_Kanayama_Saloon_%E3%81%8B%E3%81%AA%E3%82%84%E3%81%BE%E3%82%B5%E3%83%AB%E3%83%BC%E3%83%B3_in_Nagoya%2C_Japan_%2898%29.jpg/960px-Japanese_food_at_Kanayama_Saloon_%E3%81%8B%E3%81%AA%E3%82%84%E3%81%BE%E3%82%B5%E3%83%AB%E3%83%BC%E3%83%B3_in_Nagoya%2C_Japan_%2898%29.jpg",
-    "description": "位于江苏镇江的国家5A级旅游景区。"
-  },
-  {
-    "id": 89,
-    "name": "焦山（金山·焦山·北固山旅游景区）",
-    "location": "江苏 镇江",
-    "lat": 32.21,
-    "lng": 119.45,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Jiao_Hill.jpg/960px-Jiao_Hill.jpg",
-    "description": "位于江苏镇江的国家5A级旅游景区。"
-  },
-  {
-    "id": 90,
-    "name": "北固山（金山·焦山·北固山旅游景区）",
-    "location": "江苏 镇江",
-    "lat": 32.21,
-    "lng": 119.45,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/%E5%8C%97%E5%9B%BA%E5%B1%B1_-_Beigu_Mountain_-_2015.04_-_panoramio_%281%29.jpg/960px-%E5%8C%97%E5%9B%BA%E5%B1%B1_-_Beigu_Mountain_-_2015.04_-_panoramio_%281%29.jpg",
     "description": "位于江苏镇江的国家5A级旅游景区。"
   },
   {
@@ -1675,29 +1630,11 @@
   },
   {
     "id": 187,
-    "name": "云台山风景名胜区（云台山—神农山—博爱青天河风景名胜区）",
+    "name": "云台山—神农山—博爱青天河风景名胜区",
     "location": "河南 焦作",
     "lat": 35.42,
     "lng": 113.42,
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/2009_Yuntai_Shan_19.jpg/960px-2009_Yuntai_Shan_19.jpg",
-    "description": "位于河南焦作的国家5A级旅游景区。"
-  },
-  {
-    "id": 188,
-    "name": "神农山（云台山—神农山—博爱青天河风景名胜区）",
-    "location": "河南 焦作",
-    "lat": 35.42,
-    "lng": 113.42,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/%E7%A5%9E%E5%86%9C%E6%9E%B6%E8%80%81%E5%90%9B%E5%B1%B1_-_panoramio.jpg/960px-%E7%A5%9E%E5%86%9C%E6%9E%B6%E8%80%81%E5%90%9B%E5%B1%B1_-_panoramio.jpg",
-    "description": "位于河南焦作的国家5A级旅游景区。"
-  },
-  {
-    "id": 189,
-    "name": "青天河景区（云台山—神农山—博爱青天河风景名胜区）",
-    "location": "河南 焦作",
-    "lat": 35.42,
-    "lng": 113.42,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/%E9%9D%92%E5%A4%A9%E6%B2%B3_-_panoramio.jpg/960px-%E9%9D%92%E5%A4%A9%E6%B2%B3_-_panoramio.jpg",
     "description": "位于河南焦作的国家5A级旅游景区。"
   },
   {
@@ -1828,7 +1765,7 @@
   },
   {
     "id": 204,
-    "name": "三峡大坝旅游区（三峡大坝-屈原故里旅游区）",
+    "name": "三峡大坝-屈原故里旅游区",
     "location": "湖北 宜昌",
     "lat": 30.92,
     "lng": 111.32,
@@ -1851,15 +1788,6 @@
     "lat": 30.92,
     "lng": 111.32,
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/%E5%AE%9C%E6%98%8C%E4%B8%89%E5%B3%A1%E5%A4%A7%E7%80%91%E5%B8%83.jpg/960px-%E5%AE%9C%E6%98%8C%E4%B8%89%E5%B3%A1%E5%A4%A7%E7%80%91%E5%B8%83.jpg",
-    "description": "位于湖北宜昌的国家5A级旅游景区。"
-  },
-  {
-    "id": 207,
-    "name": "屈原故里（三峡大坝-屈原故里旅游区）",
-    "location": "湖北 宜昌",
-    "lat": 30.92,
-    "lng": 111.32,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5d/%E6%A5%9A%E4%B8%89%E9%97%BE%E5%A4%A7%E5%A4%AB%E5%B1%88%E5%8E%9F.jpg",
     "description": "位于湖北宜昌的国家5A级旅游景区。"
   },
   {
@@ -1963,20 +1891,11 @@
   },
   {
     "id": 219,
-    "name": "张家界武陵源旅游区（张家界武陵源—天门山旅游区）",
+    "name": "张家界武陵源—天门山旅游区",
     "location": "安徽 芜湖",
     "lat": 31.49,
     "lng": 118.37,
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/1_zhangjiajie_huangshizhai_wulingyuan_panorama_2012.jpg/960px-1_zhangjiajie_huangshizhai_wulingyuan_panorama_2012.jpg",
-    "description": "位于安徽芜湖的国家5A级旅游景区。"
-  },
-  {
-    "id": 220,
-    "name": "天门山景区（张家界武陵源—天门山旅游区）",
-    "location": "安徽 芜湖",
-    "lat": 31.49,
-    "lng": 118.37,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Tianmen_38330-Zhangjiajie_%2849047525877%29.jpg/960px-Tianmen_38330-Zhangjiajie_%2849047525877%29.jpg",
     "description": "位于安徽芜湖的国家5A级旅游景区。"
   },
   {
@@ -1999,20 +1918,11 @@
   },
   {
     "id": 223,
-    "name": "岳阳楼（岳阳楼—君山岛景区）",
+    "name": "岳阳楼—君山岛景区",
     "location": "湖南 岳阳",
     "lat": 29.38,
     "lng": 113.09,
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Frontal_view_of_Yueyang_Tower%2C_Hunan%2C_China1.jpg/853px-Frontal_view_of_Yueyang_Tower%2C_Hunan%2C_China1.jpg",
-    "description": "位于湖南岳阳的国家5A级旅游景区。"
-  },
-  {
-    "id": 224,
-    "name": "君山岛（岳阳楼—君山岛景区）",
-    "location": "湖南 岳阳",
-    "lat": 29.38,
-    "lng": 113.09,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Square%2C_Junshan_Island%2C_picture1.jpg/960px-Square%2C_Junshan_Island%2C_picture1.jpg",
     "description": "位于湖南岳阳的国家5A级旅游景区。"
   },
   {
@@ -2062,29 +1972,11 @@
   },
   {
     "id": 230,
-    "name": "矮寨（矮寨·十八洞·德夯大峡谷景区）",
+    "name": "矮寨·十八洞·德夯大峡谷景区",
     "location": "湖南 湘西",
     "lat": 28.3319,
     "lng": 109.5983,
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/%E7%9F%AE%E5%AF%A8%E5%A4%A7%E6%A1%A5.jpg/960px-%E7%9F%AE%E5%AF%A8%E5%A4%A7%E6%A1%A5.jpg",
-    "description": "位于中国的国家5A级旅游景区。"
-  },
-  {
-    "id": 231,
-    "name": "德夯大峡谷（矮寨·十八洞·德夯大峡谷景区）",
-    "location": "湖南 湘西",
-    "lat": 28.35,
-    "lng": 109.55,
-    "image": "https://placehold.co/600x400?text=德夯大峡谷（矮寨·十八洞·德夯大峡谷景区）",
-    "description": "位于中国的国家5A级旅游景区。"
-  },
-  {
-    "id": 232,
-    "name": "十八洞（矮寨·十八洞·德夯大峡谷景区）",
-    "location": "湖南 湘西",
-    "lat": 28.48,
-    "lng": 109.45,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/%E8%BE%BE%E6%91%A9%E6%B4%9E%E5%8D%81%E5%85%AB%E6%99%AF_-_Dharma_Cave_and_Eighteen_Attractions_-_2010.08_-_panoramio.jpg/960px-%E8%BE%BE%E6%91%A9%E6%B4%9E%E5%8D%81%E5%85%AB%E6%99%AF_-_Dharma_Cave_and_Eighteen_Attractions_-_2010.08_-_panoramio.jpg",
     "description": "位于中国的国家5A级旅游景区。"
   },
   {
@@ -2269,20 +2161,11 @@
   },
   {
     "id": 253,
-    "name": "两江四湖（两江四湖·象山景区）",
+    "name": "两江四湖·象山景区",
     "location": "广西 桂林",
     "lat": 25.27,
     "lng": 110.29,
     "image": "https://upload.wikimedia.org/wikipedia/commons/7/71/Guilin_lijiang.jpg",
-    "description": "位于广西桂林的国家5A级旅游景区。"
-  },
-  {
-    "id": 254,
-    "name": "象山（两江四湖·象山景区）",
-    "location": "广西 桂林",
-    "lat": 25.27,
-    "lng": 110.29,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Xiangshan_Huaao_Stone_Forest.jpg/960px-Xiangshan_Huaao_Stone_Forest.jpg",
     "description": "位于广西桂林的国家5A级旅游景区。"
   },
   {

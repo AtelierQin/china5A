@@ -1,0 +1,452 @@
+[
+  {
+    "id": "natgeo_world_1",
+    "name": "Barcelona, Spain",
+    "category": "natgeo_world",
+    "location": "Barcelona, Barcelonès, Barcelona, Catalunya, España",
+    "lat": 41.3825802,
+    "lng": 2.177073,
+    "image": "https://placehold.co/600x400?text=Barcelona%2C%20Spain"
+  },
+  {
+    "id": "natgeo_world_2",
+    "name": "Hong Kong",
+    "category": "natgeo_world",
+    "location": "香港 Hong Kong, 中国",
+    "lat": 22.2792968,
+    "lng": 114.1628907,
+    "image": "https://placehold.co/600x400?text=Hong%20Kong"
+  },
+  {
+    "id": "natgeo_world_3",
+    "name": "Istanbul, Turkey",
+    "category": "natgeo_world",
+    "location": "İstanbul, Fatih, İstanbul, Marmara Bölgesi, 34122, Türkiye",
+    "lat": 41.006381,
+    "lng": 28.9758715,
+    "image": "https://placehold.co/600x400?text=Istanbul%2C%20Turkey"
+  },
+  {
+    "id": "natgeo_world_4",
+    "name": "Jerusalem",
+    "category": "natgeo_world",
+    "location": "ירושלים | القدس, נפת ירושלים, מחוז ירושלים, ישראל",
+    "lat": 31.7788472,
+    "lng": 35.2257856,
+    "image": "https://placehold.co/600x400?text=Jerusalem"
+  },
+  {
+    "id": "natgeo_world_5",
+    "name": "London, UK",
+    "category": "natgeo_world",
+    "location": "Greater London, England, United Kingdom",
+    "lat": 51.5074456,
+    "lng": -0.1277653,
+    "image": "https://placehold.co/600x400?text=London%2C%20UK"
+  },
+  {
+    "id": "natgeo_world_6",
+    "name": "New York City, USA",
+    "category": "natgeo_world",
+    "location": "New York, United States",
+    "lat": 40.7127281,
+    "lng": -74.0060152,
+    "image": "https://placehold.co/600x400?text=New%20York%20City%2C%20USA"
+  },
+  {
+    "id": "natgeo_world_7",
+    "name": "Paris, France",
+    "category": "natgeo_world",
+    "location": "Paris, Île-de-France, France métropolitaine, France",
+    "lat": 48.8588897,
+    "lng": 2.320041,
+    "image": "https://placehold.co/600x400?text=Paris%2C%20France"
+  },
+  {
+    "id": "natgeo_world_8",
+    "name": "Rio de Janeiro, Brazil",
+    "category": "natgeo_world",
+    "location": "Rio de Janeiro, Região Geográfica Imediata do Rio de Janeiro, Região Metropolitana do Rio de Janeiro, Região Geográfica Intermediária do Rio de Janeiro, Rio de Janeiro, Região Sudeste, Brasil",
+    "lat": -22.9110137,
+    "lng": -43.2093727,
+    "image": "https://placehold.co/600x400?text=Rio%20de%20Janeiro%2C%20Brazil"
+  },
+  {
+    "id": "natgeo_world_9",
+    "name": "San Francisco, USA",
+    "category": "natgeo_world",
+    "location": "San Francisco, California, United States",
+    "lat": 37.7879363,
+    "lng": -122.4075201,
+    "image": "https://placehold.co/600x400?text=San%20Francisco%2C%20USA"
+  },
+  {
+    "id": "natgeo_world_10",
+    "name": "Venice, Italy",
+    "category": "natgeo_world",
+    "location": "Venezia, Veneto, 30121-30176, Italia",
+    "lat": 45.4371908,
+    "lng": 12.3345898,
+    "image": "https://placehold.co/600x400?text=Venice%2C%20Italy"
+  },
+  {
+    "id": "natgeo_world_11",
+    "name": "Antarctica",
+    "category": "natgeo_world",
+    "location": "Antarctica",
+    "lat": -72.8438691,
+    "lng": 0.0,
+    "image": "https://placehold.co/600x400?text=Antarctica"
+  },
+  {
+    "id": "natgeo_world_12",
+    "name": "Amazon Rainforest, Brazil",
+    "category": "natgeo_world",
+    "location": "Amazonas, Brazil",
+    "lat": -3.4653,
+    "lng": -62.2159,
+    "image": "https://placehold.co/600x400?text=Amazon%20Rainforest%2C%20Brazil"
+  },
+  {
+    "id": "natgeo_world_13",
+    "name": "Canadian Rockies, Canada",
+    "category": "natgeo_world",
+    "location": "Cranbrook/Canadian Rockies International Airport, Airport Access Road, Cranbrook, Regional District of East Kootenay, British Columbia, V1C 7E5, Canada",
+    "lat": 49.6128609,
+    "lng": -115.783911,
+    "image": "https://placehold.co/600x400?text=Canadian%20Rockies%2C%20Canada"
+  },
+  {
+    "id": "natgeo_world_14",
+    "name": "Galapagos Islands, Ecuador",
+    "category": "natgeo_world",
+    "location": "Archipélago de Galápagos, Galápagos, Ecuador",
+    "lat": -0.6288151,
+    "lng": -90.3638752,
+    "image": "https://placehold.co/600x400?text=Galapagos%20Islands%2C%20Ecuador"
+  },
+  {
+    "id": "natgeo_world_15",
+    "name": "Grand Canyon, USA",
+    "category": "natgeo_world",
+    "location": "Grand Canyon, Coconino County, Arizona, United States",
+    "lat": 36.0980405,
+    "lng": -112.0962787,
+    "image": "https://placehold.co/600x400?text=Grand%20Canyon%2C%20USA"
+  },
+  {
+    "id": "natgeo_world_16",
+    "name": "Australian Outback",
+    "category": "natgeo_world",
+    "location": "Northern Territory, Australia",
+    "lat": -24.86,
+    "lng": 133.59,
+    "image": "https://placehold.co/600x400?text=Australian%20Outback"
+  },
+  {
+    "id": "natgeo_world_17",
+    "name": "Papua New Guinea Reefs",
+    "category": "natgeo_world",
+    "location": "Lusancay Islands and Reefs, Milne Bay, Southern Region, Papua Niugini",
+    "lat": -8.5,
+    "lng": 150.5,
+    "image": "https://placehold.co/600x400?text=Papua%20New%20Guinea%20Reefs"
+  },
+  {
+    "id": "natgeo_world_18",
+    "name": "Sahara Desert",
+    "category": "natgeo_world",
+    "location": "Sahara, Tazrouk ⵜⴰⵥⵔⵓⴽ تاظروك, Daïra Tazrouk, Tamanrasset, Algérie ⵍⵣⵣⴰⵢⴻⵔ الجزائر",
+    "lat": 22.25,
+    "lng": 9.8,
+    "image": "https://placehold.co/600x400?text=Sahara%20Desert"
+  },
+  {
+    "id": "natgeo_world_19",
+    "name": "Serengeti, Tanzania",
+    "category": "natgeo_world",
+    "location": "Serengeti, Mara, Lake Zone, 31611, Tanzania",
+    "lat": -1.9622631,
+    "lng": 34.7690573,
+    "image": "https://placehold.co/600x400?text=Serengeti%2C%20Tanzania"
+  },
+  {
+    "id": "natgeo_world_20",
+    "name": "Tepuis, Venezuela",
+    "category": "natgeo_world",
+    "location": "Canaima National Park, Bolívar, Venezuela",
+    "lat": 5.197,
+    "lng": -60.758,
+    "image": "https://placehold.co/600x400?text=Tepuis%2C%20Venezuela"
+  },
+  {
+    "id": "natgeo_world_21",
+    "name": "Amalfi Coast, Italy",
+    "category": "natgeo_world",
+    "location": "Amalfi Coast Casa Ida, 107, Via Giuseppe Pellegrino, Raito, Marina di Vietri, Vietri sul Mare, Salerno, Campania, 84019, Italia",
+    "lat": 40.6681641,
+    "lng": 14.7213286,
+    "image": "https://placehold.co/600x400?text=Amalfi%20Coast%2C%20Italy"
+  },
+  {
+    "id": "natgeo_world_22",
+    "name": "Boundary Waters, USA",
+    "category": "natgeo_world",
+    "location": "Boundary Waters Canoe Area Wilderness, Minnesota, United States",
+    "lat": 48.018,
+    "lng": -91.683,
+    "image": "https://placehold.co/600x400?text=Boundary%20Waters%2C%20USA"
+  },
+  {
+    "id": "natgeo_world_23",
+    "name": "British Virgin Islands",
+    "category": "natgeo_world",
+    "location": "British Virgin Islands",
+    "lat": 18.4024395,
+    "lng": -64.5661642,
+    "image": "https://placehold.co/600x400?text=British%20Virgin%20Islands"
+  },
+  {
+    "id": "natgeo_world_24",
+    "name": "Greek Islands",
+    "category": "natgeo_world",
+    "location": "Aegean Sea, Greece",
+    "lat": 37.44,
+    "lng": 25.32,
+    "image": "https://placehold.co/600x400?text=Greek%20Islands"
+  },
+  {
+    "id": "natgeo_world_25",
+    "name": "Hawaii, USA",
+    "category": "natgeo_world",
+    "location": "Hawaii, United States",
+    "lat": 19.5938015,
+    "lng": -155.4283701,
+    "image": "https://placehold.co/600x400?text=Hawaii%2C%20USA"
+  },
+  {
+    "id": "natgeo_world_26",
+    "name": "Kyoto, Japan",
+    "category": "natgeo_world",
+    "location": "京都市, 京都府, 日本",
+    "lat": 35.0115754,
+    "lng": 135.7681441,
+    "image": "https://placehold.co/600x400?text=Kyoto%2C%20Japan"
+  },
+  {
+    "id": "natgeo_world_27",
+    "name": "Kerala, India",
+    "category": "natgeo_world",
+    "location": "Kerala, India",
+    "lat": 10.3528744,
+    "lng": 76.5120396,
+    "image": "https://placehold.co/600x400?text=Kerala%2C%20India"
+  },
+  {
+    "id": "natgeo_world_28",
+    "name": "Palau",
+    "category": "natgeo_world",
+    "location": "Belau",
+    "lat": 5.3783537,
+    "lng": 132.9102573,
+    "image": "https://placehold.co/600x400?text=Palau"
+  },
+  {
+    "id": "natgeo_world_29",
+    "name": "Torres del Paine, Chile",
+    "category": "natgeo_world",
+    "location": "Torres del Paine, Provincia de Última Esperanza, Región de Magallanes y de la Antártica Chilena, 6170000, Chile",
+    "lat": -51.0827249,
+    "lng": -72.9254451,
+    "image": "https://placehold.co/600x400?text=Torres%20del%20Paine%2C%20Chile"
+  },
+  {
+    "id": "natgeo_world_30",
+    "name": "Seychelles",
+    "category": "natgeo_world",
+    "location": "Sesel",
+    "lat": -4.6574977,
+    "lng": 55.4540146,
+    "image": "https://placehold.co/600x400?text=Seychelles"
+  },
+  {
+    "id": "natgeo_world_31",
+    "name": "Alps, Switzerland",
+    "category": "natgeo_world",
+    "location": "Berner Alpen, Bern/Berne, Schweiz/Suisse/Svizzera/Svizra",
+    "lat": 46.4356252,
+    "lng": 7.7323671,
+    "image": "https://placehold.co/600x400?text=Alps%2C%20Switzerland"
+  },
+  {
+    "id": "natgeo_world_32",
+    "name": "Big Sur, USA",
+    "category": "natgeo_world",
+    "location": "Big Sur, Monterey County, California, United States",
+    "lat": 36.1437044,
+    "lng": -121.564593,
+    "image": "https://placehold.co/600x400?text=Big%20Sur%2C%20USA"
+  },
+  {
+    "id": "natgeo_world_33",
+    "name": "Canadian Maritimes",
+    "category": "natgeo_world",
+    "location": "New Brunswick / Nova Scotia / PEI, Canada",
+    "lat": 46.5,
+    "lng": -63.5,
+    "image": "https://placehold.co/600x400?text=Canadian%20Maritimes"
+  },
+  {
+    "id": "natgeo_world_34",
+    "name": "Coastal Norway",
+    "category": "natgeo_world",
+    "location": "Nordneset kyststi, Julshamn, Hustadvika, Møre og Romsdal, 6444, Norge",
+    "lat": 62.9945952,
+    "lng": 7.1490264,
+    "image": "https://placehold.co/600x400?text=Coastal%20Norway"
+  },
+  {
+    "id": "natgeo_world_35",
+    "name": "Danang, Vietnam",
+    "category": "natgeo_world",
+    "location": "Thành phố Đà Nẵng, Việt Nam",
+    "lat": 16.068,
+    "lng": 108.212,
+    "image": "https://placehold.co/600x400?text=Danang%2C%20Vietnam"
+  },
+  {
+    "id": "natgeo_world_36",
+    "name": "Lake District, UK",
+    "category": "natgeo_world",
+    "location": "Lake District National Park, England, United Kingdom",
+    "lat": 54.4785305,
+    "lng": -3.0655331,
+    "image": "https://placehold.co/600x400?text=Lake%20District%2C%20UK"
+  },
+  {
+    "id": "natgeo_world_37",
+    "name": "Loire Valley, France",
+    "category": "natgeo_world",
+    "location": "Val de Loire, Pays de la Loire, France métropolitaine, France",
+    "lat": 47.4492772,
+    "lng": -0.349549,
+    "image": "https://placehold.co/600x400?text=Loire%20Valley%2C%20France"
+  },
+  {
+    "id": "natgeo_world_38",
+    "name": "North Island, New Zealand",
+    "category": "natgeo_world",
+    "location": "North Island / Te Ika-a-Māui, New Zealand / Aotearoa",
+    "lat": -38.0035304,
+    "lng": 175.957821,
+    "image": "https://placehold.co/600x400?text=North%20Island%2C%20New%20Zealand"
+  },
+  {
+    "id": "natgeo_world_39",
+    "name": "Tuscany, Italy",
+    "category": "natgeo_world",
+    "location": "Toscana, Italia",
+    "lat": 43.4586541,
+    "lng": 11.1389204,
+    "image": "https://placehold.co/600x400?text=Tuscany%2C%20Italy"
+  },
+  {
+    "id": "natgeo_world_40",
+    "name": "Vermont, USA",
+    "category": "natgeo_world",
+    "location": "Vermont, United States",
+    "lat": 44.5990718,
+    "lng": -72.5002608,
+    "image": "https://placehold.co/600x400?text=Vermont%2C%20USA"
+  },
+  {
+    "id": "natgeo_world_41",
+    "name": "Acropolis, Greece",
+    "category": "natgeo_world",
+    "location": "Ακρόπολη, Αρχαίος Περίπατος, Αστεροσκοπείο, Ασύρματος, Πετράλωνα, 3η Κοινότητα Αθηνών, Αθήνα, Δήμος Αθηναίων, Περιφερειακή Ενότητα Κεντρικού Τομέα Αθηνών, Περιφέρεια Αττικής, Αποκεντρωμένη Διοίκηση Αττικής, 105 55, Ελλάς",
+    "lat": 37.9716894,
+    "lng": 23.7263197,
+    "image": "https://placehold.co/600x400?text=Acropolis%2C%20Greece"
+  },
+  {
+    "id": "natgeo_world_42",
+    "name": "Angkor Wat, Cambodia",
+    "category": "natgeo_world",
+    "location": "អង្គរវត្ត, Temporary access, ក្រុងសៀមរាប, សៀមរាប, ខេត្តសៀមរាប, 171253, ព្រះរាជាណាចក្រ​កម្ពុជា",
+    "lat": 13.4124381,
+    "lng": 103.8665878,
+    "image": "https://placehold.co/600x400?text=Angkor%20Wat%2C%20Cambodia"
+  },
+  {
+    "id": "natgeo_world_43",
+    "name": "Great Wall of China",
+    "category": "natgeo_world",
+    "location": "长城, X410, 东望山乡, 桥东区, 张家口市, 河北省, 076300, 中国",
+    "lat": 40.8096213,
+    "lng": 115.1489997,
+    "image": "https://placehold.co/600x400?text=Great%20Wall%20of%20China"
+  },
+  {
+    "id": "natgeo_world_44",
+    "name": "Machu Picchu, Peru",
+    "category": "natgeo_world",
+    "location": "Ciudadela de Machu Picchu, Camino a Puente Inka, San Miguel, Intihuatana, Machupicchu, Urubamba, Cusco, 08680, Perú",
+    "lat": -13.164341,
+    "lng": -72.5450094,
+    "image": "https://placehold.co/600x400?text=Machu%20Picchu%2C%20Peru"
+  },
+  {
+    "id": "natgeo_world_45",
+    "name": "Mesa Verde, USA",
+    "category": "natgeo_world",
+    "location": "Mesa Verde, Riverside County, California, United States",
+    "lat": 33.5906993,
+    "lng": -114.7401332,
+    "image": "https://placehold.co/600x400?text=Mesa%20Verde%2C%20USA"
+  },
+  {
+    "id": "natgeo_world_46",
+    "name": "Petra, Jordan",
+    "category": "natgeo_world",
+    "location": "البتراء, Petra Sub-District, لواء البتراء, معان, 71810, الأردن",
+    "lat": 30.3258363,
+    "lng": 35.4745669,
+    "image": "https://placehold.co/600x400?text=Petra%2C%20Jordan"
+  },
+  {
+    "id": "natgeo_world_47",
+    "name": "Pyramids of Giza, Egypt",
+    "category": "natgeo_world",
+    "location": "Pyramids of Giza, Giza Governorate, Egypt",
+    "lat": 29.9792,
+    "lng": 31.1342,
+    "image": "https://placehold.co/600x400?text=Pyramids%20of%20Giza%2C%20Egypt"
+  },
+  {
+    "id": "natgeo_world_48",
+    "name": "Taj Mahal, India",
+    "category": "natgeo_world",
+    "location": "Taj Mahal, Taj East Gate Road, Taj Ganj, Agra, Uttar Pradesh, 282004, India",
+    "lat": 27.1750075,
+    "lng": 78.0421013,
+    "image": "https://placehold.co/600x400?text=Taj%20Mahal%2C%20India"
+  },
+  {
+    "id": "natgeo_world_49",
+    "name": "Vatican City",
+    "category": "natgeo_world",
+    "location": "Civitas Vaticana - Città del Vaticano, 00120, Civitas Vaticana - Città del Vaticano",
+    "lat": 41.9034912,
+    "lng": 12.4528349,
+    "image": "https://placehold.co/600x400?text=Vatican%20City"
+  },
+  {
+    "id": "natgeo_world_50",
+    "name": "Chichen Itza, Mexico",
+    "category": "natgeo_world",
+    "location": "Chichen Itzá, San Felipe Nuevo, Tinum, Yucatán, México",
+    "lat": 20.682852,
+    "lng": -88.5687196,
+    "image": "https://placehold.co/600x400?text=Chichen%20Itza%2C%20Mexico"
+  }
+]

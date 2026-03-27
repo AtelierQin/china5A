@@ -7,19 +7,19 @@ A minimalist interactive map application to visualize and track your visits to C
 This project aims to convert the text-based list of China's 5A scenic spots into an intuitive map visualization. It features a "Mission Control" aesthetic inspired by Swiss Style design, focusing on data density and clarity.
 
 ### Key Features
-- **Interactive Map**: Visualize all 300+ 5A attractions on a map using Leaflet.
-- **Progress Tracking**: Local storage-based tracking of visited locations.
+- **Interactive Map**: Visualize exactly 359 official 5A attractions and 3 curated National Geographic lists (World 50, China 50, Destinations 225).
+- **Progress Tracking**: Local storage-based tracking dynamically computed per active category.
 - **Data Export/Import**: Export and import your visited spots data as JSON.
 - **Data Filtering**: Search by name/province and filter by visited status.
 
 ## Project Structure
 
 ```
-├── data/                   # Raw JSON and CSV data files
+├── data/                   # Processed JSON core maps (attractions, natgeo lists)
 ├── docs/                   # Documentation (PRD, Design System)
-├── scripts/                # Python scripts for data scraping and processing
-│   └── tests/              # Unit tests for data scripts
-├── src/                    # Frontend source code and assets (incl. attractions.json)
+├── scripts/                # Python scripts for data extraction and geocoding
+│   └── raw_data/           # Raw JSON/CSV inputs fetched from Wikidata
+├── src/                    # Frontend source code (app.js, styles.css)
 ├── index.html              # Main application entry point
 ├── requirements.txt        # Python dependencies
 └── README.md               # This file

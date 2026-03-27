@@ -1,9 +1,15 @@
-import attractions from './attractions.json' with { type: 'json' };
+import attractions5a from '../data/attractions.json' with { type: 'json' };
+import natgeoWorld from '../data/natgeo_world.json' with { type: 'json' };
+import natgeoChina from '../data/natgeo_china.json' with { type: 'json' };
+import natgeo225 from '../data/natgeo_225.json' with { type: 'json' };
+
+const attractions = [...attractions5a, ...natgeoWorld, ...natgeoChina, ...natgeo225];
 
 // Initialize State
 const state = {
     visited: new Set(JSON.parse(localStorage.getItem('visited_5a')) || []),
     activeFilter: 'all',
+    activeCategory: 'all',
     activeId: null,
     searchTerm: ''
 };
@@ -17,6 +23,7 @@ const elements = {
     modal: document.getElementById('detail-modal'),
     closeModal: document.getElementById('close-modal'),
     filterBtns: document.querySelectorAll('.filter-btn'),
+    categoryBtns: document.querySelectorAll('.category-btn'),
     searchInput: document.getElementById('search-input'),
     // Modal Elements
     modalImg: document.getElementById('modal-img'),
@@ -53,8 +60,21 @@ const markers = {};
 
 // Helpers
 const updateStats = () => {
-    const visitedCount = state.visited.size;
-    const total = attractions.length;
+    // 1. Filter attractions based on active category
+    let currentAttractions = attractions;
+    if (state.activeCategory !== 'all') {
+        currentAttractions = attractions.filter(attr => (attr.category || '5A') === state.activeCategory);
+    }
+    
+    // 2. Count visited within that category subset
+    let visitedCount = 0;
+    currentAttractions.forEach(attr => {
+        if (state.visited.has(attr.id)) {
+            visitedCount++;
+        }
+    });
+
+    const total = currentAttractions.length;
     const percent = total > 0 ? Math.round((visitedCount / total) * 100) : 0;
 
     elements.exploredCount.textContent = String(visitedCount).padStart(2, '0');
@@ -78,7 +98,15 @@ const getFilteredAttractions = () => {
         if (state.activeFilter === 'visited') statusMatch = isVisited;
         if (state.activeFilter === 'unvisited') statusMatch = !isVisited;
 
-        // 2. Filter by Search
+        // 2. Filter by Category
+        let categoryMatch = true;
+        const attrCategory = attr.category || '5A';
+        
+        if (state.activeCategory !== 'all') {
+            categoryMatch = attrCategory === state.activeCategory;
+        }
+
+        // 3. Filter by Search
         let searchMatch = true;
         if (state.searchTerm) {
             const term = state.searchTerm.toLowerCase();
@@ -87,7 +115,7 @@ const getFilteredAttractions = () => {
             searchMatch = nameMatch || locMatch;
         }
 
-        return statusMatch && searchMatch;
+        return statusMatch && categoryMatch && searchMatch;
     });
 };
 
@@ -128,9 +156,18 @@ const initMarkers = () => {
                 icon: createMarkerIcon(state.visited.has(attr.id))
             }).addTo(map);
 
+            let badgeLabel = '';
+            if (attr.category === 'natgeo_world') badgeLabel = 'WORLD 50';
+            else if (attr.category === 'natgeo_china') badgeLabel = 'CHINA 50';
+            else if (attr.category === 'natgeo_225') badgeLabel = 'DESTINATIONS 225';
+            
+            const badgeIndicator = badgeLabel ? `<span class="category-badge badge-natgeo" style="margin-right: 6px;">${badgeLabel}</span>` : '';
+            
+            const idDisplay = typeof attr.id === 'number' ? `<span class="preview-id">${String(attr.id).padStart(2, '0')}</span>` : '';
             const tooltipContent = `
                 <div class="preview-card">
-                    <span class="preview-id">${String(attr.id).padStart(2, '0')}</span>
+                    ${idDisplay}
+                    ${badgeIndicator}
                     <span class="preview-name">${attr.name}</span>
                 </div>
             `;
@@ -161,12 +198,16 @@ const renderList = () => {
 
     filtered.forEach(attr => {
         const isVisited = state.visited.has(attr.id);
+        
+        const idDisplay = typeof attr.id === 'number' ? `<span style="font-family: var(--font-mono); color: var(--text-secondary); margin-right: 8px;">${String(attr.id).padStart(2, '0')}</span>` : '';
         const el = document.createElement('div');
         el.className = `list-item ${isVisited ? 'visited' : ''}`;
         el.innerHTML = `
             <div class="item-info">
-                <span class="item-name"><span style="font-family: var(--font-mono); color: var(--text-secondary); margin-right: 8px;">${String(attr.id).padStart(2, '0')}</span>${attr.name}</span>
-                <span class="item-location">${attr.location}</span>
+                <span class="item-name">
+                    ${idDisplay}${attr.name}
+                </span>
+                <div class="item-location">${attr.location}</div>
             </div>
             <div class="item-status"></div>
         `;
@@ -182,9 +223,11 @@ const renderList = () => {
 const openModal = (attr) => {
     state.activeId = attr.id;
     elements.modalImg.src = attr.image;
-    elements.modalId.textContent = String(attr.id).padStart(2, '0');
+    elements.modalId.textContent = typeof attr.id === 'number' ? String(attr.id).padStart(2, '0') : '';
     elements.modalTitle.textContent = attr.name;
+    
     elements.modalLocation.textContent = attr.location;
+    
     elements.modalDesc.textContent = attr.description;
 
     updateModalButton();
@@ -218,6 +261,13 @@ const toggleVisited = () => {
 // Event Listeners
 elements.closeModal.onclick = () => elements.modal.close();
 elements.markBtn.onclick = toggleVisited;
+
+// Close modal when clicking outside of it (on the backdrop)
+elements.modal.addEventListener('click', (e) => {
+    if (e.target === elements.modal) {
+        elements.modal.close();
+    }
+});
 
 // Data Export/Import
 const exportData = () => {
@@ -275,6 +325,19 @@ elements.filterBtns.forEach(btn => {
         updateMarkers();
     };
 });
+
+if (elements.categoryBtns) {
+    elements.categoryBtns.forEach(btn => {
+        btn.onclick = (e) => {
+            elements.categoryBtns.forEach(b => b.classList.remove('active'));
+            e.target.classList.add('active');
+            state.activeCategory = e.target.dataset.category;
+            renderList();
+            updateMarkers();
+            updateStats();
+        };
+    });
+}
 
 // Search Listener
 if (elements.searchInput) {

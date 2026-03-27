@@ -275,6 +275,59 @@ body {
     color: var(--text-head);
 }
 
+/* Category Filters */
+.category-btn {
+    background: transparent;
+    border: 1px solid var(--border-structure);
+    color: var(--text-secondary);
+    padding: 4px 8px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: all 0.2s;
+    flex: 1;
+}
+
+.category-btn:hover {
+    border-color: var(--signal-amber);
+    color: var(--signal-amber);
+}
+
+.category-btn.active {
+    background-color: rgba(245, 158, 11, 0.1);
+    border-color: var(--signal-amber);
+    color: var(--signal-amber);
+}
+
+/* Category Badges */
+.badge-container {
+    display: flex;
+    gap: 4px;
+}
+
+.category-badge {
+    padding: 1px 4px;
+    font-family: var(--font-mono);
+    font-size: 8px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.badge-5a {
+    background: rgba(239, 68, 68, 0.15);
+    color: var(--signal-red);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.badge-natgeo {
+    background: rgba(245, 158, 11, 0.15);
+    color: var(--signal-amber);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
 /* List Items - Data Row Pattern */
 .attraction-list {
     flex: 1;

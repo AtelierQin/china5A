@@ -1,0 +1,2117 @@
+[
+  {
+    "id": "natgeo_225_1",
+    "name": "Machu Picchu, Peru",
+    "category": "natgeo_225",
+    "location": "Ciudadela de Machu Picchu, Perú",
+    "lat": -13.164341,
+    "lng": -72.5450094,
+    "image": "https://placehold.co/600x400?text=Machu%20Picchu%2C%20Peru"
+  },
+  {
+    "id": "natgeo_225_2",
+    "name": "Petra, Jordan",
+    "category": "natgeo_225",
+    "location": "البترا, الأردن",
+    "lat": 30.3497724,
+    "lng": 35.3764846,
+    "image": "https://placehold.co/600x400?text=Petra%2C%20Jordan"
+  },
+  {
+    "id": "natgeo_225_3",
+    "name": "Angkor Wat, Cambodia",
+    "category": "natgeo_225",
+    "location": "អង្គរវត្ត, ព្រះរាជាណាចក្រ​កម្ពុជា",
+    "lat": 13.4124381,
+    "lng": 103.8665878,
+    "image": "https://placehold.co/600x400?text=Angkor%20Wat%2C%20Cambodia"
+  },
+  {
+    "id": "natgeo_225_4",
+    "name": "Acropolis of Athens, Greece",
+    "category": "natgeo_225",
+    "location": "Ακρόπολη, Ελλάς",
+    "lat": 37.9716894,
+    "lng": 23.7263197,
+    "image": "https://placehold.co/600x400?text=Acropolis%20of%20Athens%2C%20Greece"
+  },
+  {
+    "id": "natgeo_225_5",
+    "name": "Colosseum, Rome, Italy",
+    "category": "natgeo_225",
+    "location": "Colosseo, Italia",
+    "lat": 41.8909421,
+    "lng": 12.491903,
+    "image": "https://placehold.co/600x400?text=Colosseum%2C%20Rome%2C%20Italy"
+  },
+  {
+    "id": "natgeo_225_6",
+    "name": "Stonehenge, UK",
+    "category": "natgeo_225",
+    "location": "Stonehenge, UK",
+    "lat": 0.0,
+    "lng": 0.0,
+    "image": "https://placehold.co/600x400?text=Stonehenge%2C%20UK"
+  },
+  {
+    "id": "natgeo_225_7",
+    "name": "Chichen Itza, Mexico",
+    "category": "natgeo_225",
+    "location": "Chichen Itzá, México",
+    "lat": 20.6838879,
+    "lng": -88.568666,
+    "image": "https://placehold.co/600x400?text=Chichen%20Itza%2C%20Mexico"
+  },
+  {
+    "id": "natgeo_225_8",
+    "name": "Taj Mahal, India",
+    "category": "natgeo_225",
+    "location": "Taj Mahal, India",
+    "lat": 27.1750075,
+    "lng": 78.0421013,
+    "image": "https://placehold.co/600x400?text=Taj%20Mahal%2C%20India"
+  },
+  {
+    "id": "natgeo_225_9",
+    "name": "Great Wall of China",
+    "category": "natgeo_225",
+    "location": "长城, 中国",
+    "lat": 40.485658,
+    "lng": 116.2121567,
+    "image": "https://placehold.co/600x400?text=Great%20Wall%20of%20China"
+  },
+  {
+    "id": "natgeo_225_10",
+    "name": "Pyramids of Giza, Egypt",
+    "category": "natgeo_225",
+    "location": "Pyramids of Giza archeological site, مصر",
+    "lat": 29.9652269,
+    "lng": 31.1142547,
+    "image": "https://placehold.co/600x400?text=Pyramids%20of%20Giza%2C%20Egypt"
+  },
+  {
+    "id": "natgeo_225_11",
+    "name": "Tikal, Guatemala",
+    "category": "natgeo_225",
+    "location": "Parque Nacional Tikal, Guatemala",
+    "lat": 17.1910467,
+    "lng": -89.6148911,
+    "image": "https://placehold.co/600x400?text=Tikal%2C%20Guatemala"
+  },
+  {
+    "id": "natgeo_225_12",
+    "name": "Bagan, Myanmar",
+    "category": "natgeo_225",
+    "location": "ပုဂံ, မြန်မာ",
+    "lat": 21.1317111,
+    "lng": 94.8623644,
+    "image": "https://placehold.co/600x400?text=Bagan%2C%20Myanmar"
+  },
+  {
+    "id": "natgeo_225_13",
+    "name": "Easter Island, Chile",
+    "category": "natgeo_225",
+    "location": "Isla de Pascua, Chile",
+    "lat": -27.1259317,
+    "lng": -109.3495887,
+    "image": "https://placehold.co/600x400?text=Easter%20Island%2C%20Chile"
+  },
+  {
+    "id": "natgeo_225_14",
+    "name": "Borobudur, Indonesia",
+    "category": "natgeo_225",
+    "location": "Borobudur, Indonesia",
+    "lat": -7.6079583,
+    "lng": 110.2038245,
+    "image": "https://placehold.co/600x400?text=Borobudur%2C%20Indonesia"
+  },
+  {
+    "id": "natgeo_225_15",
+    "name": "Pompeii, Italy",
+    "category": "natgeo_225",
+    "location": "Pompei Antica, Italia",
+    "lat": 40.7517375,
+    "lng": 14.4905636,
+    "image": "https://placehold.co/600x400?text=Pompeii%2C%20Italy"
+  },
+  {
+    "id": "natgeo_225_16",
+    "name": "Teotihuacan, Mexico",
+    "category": "natgeo_225",
+    "location": "Zona de Monumentos Arqueologicos de Teotihuacan, México",
+    "lat": 19.6902654,
+    "lng": -98.8449395,
+    "image": "https://placehold.co/600x400?text=Teotihuacan%2C%20Mexico"
+  },
+  {
+    "id": "natgeo_225_17",
+    "name": "Ephesus, Turkey",
+    "category": "natgeo_225",
+    "location": "Efes, Türkiye",
+    "lat": 37.9404456,
+    "lng": 27.3393194,
+    "image": "https://placehold.co/600x400?text=Ephesus%2C%20Turkey"
+  },
+  {
+    "id": "natgeo_225_18",
+    "name": "Ayutthaya, Thailand",
+    "category": "natgeo_225",
+    "location": "จังหวัดพระนครศรีอยุธยา, ประเทศไทย",
+    "lat": 14.3189468,
+    "lng": 100.5111681,
+    "image": "https://placehold.co/600x400?text=Ayutthaya%2C%20Thailand"
+  },
+  {
+    "id": "natgeo_225_19",
+    "name": "Karnak Temple, Egypt",
+    "category": "natgeo_225",
+    "location": "معبد خونسو, مصر",
+    "lat": 25.7167411,
+    "lng": 32.6558373,
+    "image": "https://placehold.co/600x400?text=Karnak%20Temple%2C%20Egypt"
+  },
+  {
+    "id": "natgeo_225_20",
+    "name": "Valley of the Kings, Egypt",
+    "category": "natgeo_225",
+    "location": "وادي الملوك, مصر",
+    "lat": 25.7404899,
+    "lng": 32.6017581,
+    "image": "https://placehold.co/600x400?text=Valley%20of%20the%20Kings%2C%20Egypt"
+  },
+  {
+    "id": "natgeo_225_21",
+    "name": "Volubilis, Morocco",
+    "category": "natgeo_225",
+    "location": "Volubilis وليلي ⵡⴰⵍⵉⵍⵉ, Maroc ⵍⵎⵖⵔⵉⴱ المغرب",
+    "lat": 34.0734729,
+    "lng": -5.555366,
+    "image": "https://placehold.co/600x400?text=Volubilis%2C%20Morocco"
+  },
+  {
+    "id": "natgeo_225_22",
+    "name": "Persepolis, Iran",
+    "category": "natgeo_225",
+    "location": "تخت جمشید, ایران",
+    "lat": 29.9351669,
+    "lng": 52.8904041,
+    "image": "https://placehold.co/600x400?text=Persepolis%2C%20Iran"
+  },
+  {
+    "id": "natgeo_225_23",
+    "name": "Palenque, Mexico",
+    "category": "natgeo_225",
+    "location": "Palenque, México",
+    "lat": 17.453161,
+    "lng": -91.8121241,
+    "image": "https://placehold.co/600x400?text=Palenque%2C%20Mexico"
+  },
+  {
+    "id": "natgeo_225_24",
+    "name": "Hampi, India",
+    "category": "natgeo_225",
+    "location": "Hampi, India",
+    "lat": 15.3358,
+    "lng": 76.4610201,
+    "image": "https://placehold.co/600x400?text=Hampi%2C%20India"
+  },
+  {
+    "id": "natgeo_225_25",
+    "name": "Ellora Caves, India",
+    "category": "natgeo_225",
+    "location": "Ellora caves, India",
+    "lat": 20.0267525,
+    "lng": 75.1775152,
+    "image": "https://placehold.co/600x400?text=Ellora%20Caves%2C%20India"
+  },
+  {
+    "id": "natgeo_225_26",
+    "name": "Jerash, Jordan",
+    "category": "natgeo_225",
+    "location": "جرش, الأردن",
+    "lat": 32.278448,
+    "lng": 35.8896803,
+    "image": "https://placehold.co/600x400?text=Jerash%2C%20Jordan"
+  },
+  {
+    "id": "natgeo_225_27",
+    "name": "Lalibela, Ethiopia",
+    "category": "natgeo_225",
+    "location": "ላሊበላ / Lalibela, ኢትዮጵያ",
+    "lat": 12.0360639,
+    "lng": 39.0456845,
+    "image": "https://placehold.co/600x400?text=Lalibela%2C%20Ethiopia"
+  },
+  {
+    "id": "natgeo_225_28",
+    "name": "Mesa Verde, USA",
+    "category": "natgeo_225",
+    "location": "Mesa Verde, United States",
+    "lat": 61.1179514,
+    "lng": -149.8844029,
+    "image": "https://placehold.co/600x400?text=Mesa%20Verde%2C%20USA"
+  },
+  {
+    "id": "natgeo_225_29",
+    "name": "Tulum, Mexico",
+    "category": "natgeo_225",
+    "location": "Manuel Antonio Ay, México",
+    "lat": 20.429647,
+    "lng": -87.6529306,
+    "image": "https://placehold.co/600x400?text=Tulum%2C%20Mexico"
+  },
+  {
+    "id": "natgeo_225_30",
+    "name": "Potala Palace, Tibet, China",
+    "category": "natgeo_225",
+    "location": "ཕོ་བྲང་པོ་ཏ་ལ། 布达拉宫, 中国",
+    "lat": 29.6579054,
+    "lng": 91.1173983,
+    "image": "https://placehold.co/600x400?text=Potala%20Palace%2C%20Tibet%2C%20China"
+  },
+  {
+    "id": "natgeo_225_31",
+    "name": "Alhambra, Spain",
+    "category": "natgeo_225",
+    "location": "Alhambra, España",
+    "lat": 37.1760548,
+    "lng": -3.5881101,
+    "image": "https://placehold.co/600x400?text=Alhambra%2C%20Spain"
+  },
+  {
+    "id": "natgeo_225_32",
+    "name": "Mont Saint-Michel, France",
+    "category": "natgeo_225",
+    "location": "Le Mont-Saint-Michel, France",
+    "lat": 48.6355232,
+    "lng": -1.5102571,
+    "image": "https://placehold.co/600x400?text=Mont%20Saint-Michel%2C%20France"
+  },
+  {
+    "id": "natgeo_225_33",
+    "name": "Parthenon, Greece",
+    "category": "natgeo_225",
+    "location": "Παρθενών, Ελλάς",
+    "lat": 37.9715034,
+    "lng": 23.7266177,
+    "image": "https://placehold.co/600x400?text=Parthenon%2C%20Greece"
+  },
+  {
+    "id": "natgeo_225_34",
+    "name": "Blue Mosque, Turkey",
+    "category": "natgeo_225",
+    "location": "Sultanahmet Camii, Türkiye",
+    "lat": 41.0053843,
+    "lng": 28.9768534,
+    "image": "https://placehold.co/600x400?text=Blue%20Mosque%2C%20Turkey"
+  },
+  {
+    "id": "natgeo_225_35",
+    "name": "Hagia Sophia, Turkey",
+    "category": "natgeo_225",
+    "location": "Ayasofya-i Kebir Câmi-i Şerifi, Türkiye",
+    "lat": 41.0085046,
+    "lng": 28.9800112,
+    "image": "https://placehold.co/600x400?text=Hagia%20Sophia%2C%20Turkey"
+  },
+  {
+    "id": "natgeo_225_36",
+    "name": "Forbidden City, China",
+    "category": "natgeo_225",
+    "location": "故宫, 中国",
+    "lat": 39.9172757,
+    "lng": 116.3907694,
+    "image": "https://placehold.co/600x400?text=Forbidden%20City%2C%20China"
+  },
+  {
+    "id": "natgeo_225_37",
+    "name": "Terracotta Army, China",
+    "category": "natgeo_225",
+    "location": "兵马俑连接线, 中国",
+    "lat": 34.4086001,
+    "lng": 109.2379528,
+    "image": "https://placehold.co/600x400?text=Terracotta%20Army%2C%20China"
+  },
+  {
+    "id": "natgeo_225_38",
+    "name": "Neuschwanstein Castle, Germany",
+    "category": "natgeo_225",
+    "location": "Schloss Neuschwanstein, Deutschland",
+    "lat": 47.5575522,
+    "lng": 10.7496959,
+    "image": "https://placehold.co/600x400?text=Neuschwanstein%20Castle%2C%20Germany"
+  },
+  {
+    "id": "natgeo_225_39",
+    "name": "Edinburgh Castle, UK",
+    "category": "natgeo_225",
+    "location": "ERG UK Holding Ltd, United Kingdom",
+    "lat": 55.9486125,
+    "lng": -3.206116,
+    "image": "https://placehold.co/600x400?text=Edinburgh%20Castle%2C%20UK"
+  },
+  {
+    "id": "natgeo_225_40",
+    "name": "Sydney Opera House, Australia",
+    "category": "natgeo_225",
+    "location": "Sydney Opera House, Australia",
+    "lat": -33.857198,
+    "lng": 151.2151234,
+    "image": "https://placehold.co/600x400?text=Sydney%20Opera%20House%2C%20Australia"
+  },
+  {
+    "id": "natgeo_225_41",
+    "name": "Statue of Liberty, USA",
+    "category": "natgeo_225",
+    "location": "Lego Statue of Liberty, United States",
+    "lat": 33.1280069,
+    "lng": -117.3115951,
+    "image": "https://placehold.co/600x400?text=Statue%20of%20Liberty%2C%20USA"
+  },
+  {
+    "id": "natgeo_225_42",
+    "name": "Eiffel Tower, France",
+    "category": "natgeo_225",
+    "location": "Tour Eiffel, France",
+    "lat": 48.8582599,
+    "lng": 2.2945006,
+    "image": "https://placehold.co/600x400?text=Eiffel%20Tower%2C%20France"
+  },
+  {
+    "id": "natgeo_225_43",
+    "name": "Burj Khalifa, UAE",
+    "category": "natgeo_225",
+    "location": "Rental Cars UAE - Dubai Mall, الإمارات العربية المتحدة",
+    "lat": 25.1940695,
+    "lng": 55.2771568,
+    "image": "https://placehold.co/600x400?text=Burj%20Khalifa%2C%20UAE"
+  },
+  {
+    "id": "natgeo_225_44",
+    "name": "Golden Gate Bridge, USA",
+    "category": "natgeo_225",
+    "location": "Lego Golden Gate Bridge, United States",
+    "lat": 33.1281538,
+    "lng": -117.3114933,
+    "image": "https://placehold.co/600x400?text=Golden%20Gate%20Bridge%2C%20USA"
+  },
+  {
+    "id": "natgeo_225_45",
+    "name": "Mount Rushmore, USA",
+    "category": "natgeo_225",
+    "location": "Mount Rushmore, United States",
+    "lat": 43.8794033,
+    "lng": -103.4598048,
+    "image": "https://placehold.co/600x400?text=Mount%20Rushmore%2C%20USA"
+  },
+  {
+    "id": "natgeo_225_46",
+    "name": "Sagrada Familia, Spain",
+    "category": "natgeo_225",
+    "location": "Basílica de la Sagrada Família, España",
+    "lat": 41.4035046,
+    "lng": 2.1744283,
+    "image": "https://placehold.co/600x400?text=Sagrada%20Familia%2C%20Spain"
+  },
+  {
+    "id": "natgeo_225_47",
+    "name": "St. Basil's Cathedral, Russia",
+    "category": "natgeo_225",
+    "location": "Собор Василия Блаженного, Россия",
+    "lat": 55.7524736,
+    "lng": 37.6231624,
+    "image": "https://placehold.co/600x400?text=St.%20Basil%27s%20Cathedral%2C%20Russia"
+  },
+  {
+    "id": "natgeo_225_48",
+    "name": "Christ the Redeemer, Brazil",
+    "category": "natgeo_225",
+    "location": "Cristo Redentor, Brasil",
+    "lat": -22.9519173,
+    "lng": -43.2104585,
+    "image": "https://placehold.co/600x400?text=Christ%20the%20Redeemer%2C%20Brazil"
+  },
+  {
+    "id": "natgeo_225_49",
+    "name": "Mount Fuji, Japan",
+    "category": "natgeo_225",
+    "location": "富士山, 日本",
+    "lat": 35.3628384,
+    "lng": 138.7307677,
+    "image": "https://placehold.co/600x400?text=Mount%20Fuji%2C%20Japan"
+  },
+  {
+    "id": "natgeo_225_50",
+    "name": "Moai Statues, Easter Island",
+    "category": "natgeo_225",
+    "location": "Vai-Moai, Chile",
+    "lat": -27.138155,
+    "lng": -109.306942,
+    "image": "https://placehold.co/600x400?text=Moai%20Statues%2C%20Easter%20Island"
+  },
+  {
+    "id": "natgeo_225_51",
+    "name": "Paris, France",
+    "category": "natgeo_225",
+    "location": "Paris, France",
+    "lat": 48.8588897,
+    "lng": 2.320041,
+    "image": "https://placehold.co/600x400?text=Paris%2C%20France"
+  },
+  {
+    "id": "natgeo_225_52",
+    "name": "London, UK",
+    "category": "natgeo_225",
+    "location": "Warner Music UK, United Kingdom",
+    "lat": 51.500021,
+    "lng": -0.192442,
+    "image": "https://placehold.co/600x400?text=London%2C%20UK"
+  },
+  {
+    "id": "natgeo_225_53",
+    "name": "New York City, USA",
+    "category": "natgeo_225",
+    "location": "Lego New York City, United States",
+    "lat": 33.1278936,
+    "lng": -117.311617,
+    "image": "https://placehold.co/600x400?text=New%20York%20City%2C%20USA"
+  },
+  {
+    "id": "natgeo_225_54",
+    "name": "Tokyo, Japan",
+    "category": "natgeo_225",
+    "location": "東京都, 日本",
+    "lat": 35.6768601,
+    "lng": 139.7638947,
+    "image": "https://placehold.co/600x400?text=Tokyo%2C%20Japan"
+  },
+  {
+    "id": "natgeo_225_55",
+    "name": "Kyoto, Japan",
+    "category": "natgeo_225",
+    "location": "京都市, 日本",
+    "lat": 35.0115754,
+    "lng": 135.7681441,
+    "image": "https://placehold.co/600x400?text=Kyoto%2C%20Japan"
+  },
+  {
+    "id": "natgeo_225_56",
+    "name": "Rome, Italy",
+    "category": "natgeo_225",
+    "location": "Roma, Italia",
+    "lat": 41.8933203,
+    "lng": 12.4829321,
+    "image": "https://placehold.co/600x400?text=Rome%2C%20Italy"
+  },
+  {
+    "id": "natgeo_225_57",
+    "name": "Venice, Italy",
+    "category": "natgeo_225",
+    "location": "Venezia, Italia",
+    "lat": 45.4371908,
+    "lng": 12.3345898,
+    "image": "https://placehold.co/600x400?text=Venice%2C%20Italy"
+  },
+  {
+    "id": "natgeo_225_58",
+    "name": "Florence, Italy",
+    "category": "natgeo_225",
+    "location": "Firenze, Italia",
+    "lat": 43.7697955,
+    "lng": 11.2556404,
+    "image": "https://placehold.co/600x400?text=Florence%2C%20Italy"
+  },
+  {
+    "id": "natgeo_225_59",
+    "name": "Barcelona, Spain",
+    "category": "natgeo_225",
+    "location": "Barcelona, España",
+    "lat": 41.3825802,
+    "lng": 2.177073,
+    "image": "https://placehold.co/600x400?text=Barcelona%2C%20Spain"
+  },
+  {
+    "id": "natgeo_225_60",
+    "name": "Madrid, Spain",
+    "category": "natgeo_225",
+    "location": "Biblioteca Nacional de España, España",
+    "lat": 40.4237276,
+    "lng": -3.6899043,
+    "image": "https://placehold.co/600x400?text=Madrid%2C%20Spain"
+  },
+  {
+    "id": "natgeo_225_61",
+    "name": "Istanbul, Turkey",
+    "category": "natgeo_225",
+    "location": "İstanbul, Türkiye",
+    "lat": 41.006381,
+    "lng": 28.9758715,
+    "image": "https://placehold.co/600x400?text=Istanbul%2C%20Turkey"
+  },
+  {
+    "id": "natgeo_225_62",
+    "name": "Jerusalem, Israel",
+    "category": "natgeo_225",
+    "location": "ירושלים, ישראל",
+    "lat": 31.7884543,
+    "lng": 35.2187712,
+    "image": "https://placehold.co/600x400?text=Jerusalem%2C%20Israel"
+  },
+  {
+    "id": "natgeo_225_63",
+    "name": "Dubai, UAE",
+    "category": "natgeo_225",
+    "location": "SnapFixNow – MEP & Facility Management | Building Maintenance Dubai, UAE, الإمارات العربية المتحدة",
+    "lat": 25.2657579,
+    "lng": 55.3106043,
+    "image": "https://placehold.co/600x400?text=Dubai%2C%20UAE"
+  },
+  {
+    "id": "natgeo_225_64",
+    "name": "Cape Town, South Africa",
+    "category": "natgeo_225",
+    "location": "Cape Town, South Africa",
+    "lat": -33.9288301,
+    "lng": 18.4172197,
+    "image": "https://placehold.co/600x400?text=Cape%20Town%2C%20South%20Africa"
+  },
+  {
+    "id": "natgeo_225_65",
+    "name": "Rio de Janeiro, Brazil",
+    "category": "natgeo_225",
+    "location": "Rio de Janeiro, Brasil",
+    "lat": -22.9110137,
+    "lng": -43.2093727,
+    "image": "https://placehold.co/600x400?text=Rio%20de%20Janeiro%2C%20Brazil"
+  },
+  {
+    "id": "natgeo_225_66",
+    "name": "Buenos Aires, Argentina",
+    "category": "natgeo_225",
+    "location": "Buenos Aires, Argentina",
+    "lat": -34.6095579,
+    "lng": -58.3887904,
+    "image": "https://placehold.co/600x400?text=Buenos%20Aires%2C%20Argentina"
+  },
+  {
+    "id": "natgeo_225_67",
+    "name": "Sydney, Australia",
+    "category": "natgeo_225",
+    "location": "Sydney, Australia",
+    "lat": -33.8698439,
+    "lng": 151.2082848,
+    "image": "https://placehold.co/600x400?text=Sydney%2C%20Australia"
+  },
+  {
+    "id": "natgeo_225_68",
+    "name": "Melbourne, Australia",
+    "category": "natgeo_225",
+    "location": "Melbourne, Australia",
+    "lat": -37.8142454,
+    "lng": 144.9631732,
+    "image": "https://placehold.co/600x400?text=Melbourne%2C%20Australia"
+  },
+  {
+    "id": "natgeo_225_69",
+    "name": "Hong Kong, China",
+    "category": "natgeo_225",
+    "location": "香港 Hong Kong, 中国",
+    "lat": 22.3492155,
+    "lng": 114.1857978,
+    "image": "https://placehold.co/600x400?text=Hong%20Kong%2C%20China"
+  },
+  {
+    "id": "natgeo_225_70",
+    "name": "Singapore",
+    "category": "natgeo_225",
+    "location": "Singapore, Singapore",
+    "lat": 1.357107,
+    "lng": 103.8194992,
+    "image": "https://placehold.co/600x400?text=Singapore"
+  },
+  {
+    "id": "natgeo_225_71",
+    "name": "Seoul, South Korea",
+    "category": "natgeo_225",
+    "location": "서울특별시, 대한민국",
+    "lat": 37.5666791,
+    "lng": 126.9782914,
+    "image": "https://placehold.co/600x400?text=Seoul%2C%20South%20Korea"
+  },
+  {
+    "id": "natgeo_225_72",
+    "name": "Berlin, Germany",
+    "category": "natgeo_225",
+    "location": "Berlin, Deutschland",
+    "lat": 52.5173885,
+    "lng": 13.3951309,
+    "image": "https://placehold.co/600x400?text=Berlin%2C%20Germany"
+  },
+  {
+    "id": "natgeo_225_73",
+    "name": "Vienna, Austria",
+    "category": "natgeo_225",
+    "location": "Wien, Österreich",
+    "lat": 48.2083537,
+    "lng": 16.3725042,
+    "image": "https://placehold.co/600x400?text=Vienna%2C%20Austria"
+  },
+  {
+    "id": "natgeo_225_74",
+    "name": "Prague, Czechia",
+    "category": "natgeo_225",
+    "location": "Praha, Česko",
+    "lat": 50.0850112,
+    "lng": 14.4265172,
+    "image": "https://placehold.co/600x400?text=Prague%2C%20Czechia"
+  },
+  {
+    "id": "natgeo_225_75",
+    "name": "Budapest, Hungary",
+    "category": "natgeo_225",
+    "location": "Budapest, Magyarország",
+    "lat": 47.4813896,
+    "lng": 19.1457723,
+    "image": "https://placehold.co/600x400?text=Budapest%2C%20Hungary"
+  },
+  {
+    "id": "natgeo_225_76",
+    "name": "St. Petersburg, Russia",
+    "category": "natgeo_225",
+    "location": "Санкт-Петербургский государственный университет, Россия",
+    "lat": 59.9406782,
+    "lng": 30.2964999,
+    "image": "https://placehold.co/600x400?text=St.%20Petersburg%2C%20Russia"
+  },
+  {
+    "id": "natgeo_225_77",
+    "name": "Amsterdam, Netherlands",
+    "category": "natgeo_225",
+    "location": "Amsterdam, Nederland",
+    "lat": 52.3730796,
+    "lng": 4.8924534,
+    "image": "https://placehold.co/600x400?text=Amsterdam%2C%20Netherlands"
+  },
+  {
+    "id": "natgeo_225_78",
+    "name": "Lisbon, Portugal",
+    "category": "natgeo_225",
+    "location": "Lisboa, Portugal",
+    "lat": 38.7077507,
+    "lng": -9.1365919,
+    "image": "https://placehold.co/600x400?text=Lisbon%2C%20Portugal"
+  },
+  {
+    "id": "natgeo_225_79",
+    "name": "San Francisco, USA",
+    "category": "natgeo_225",
+    "location": "Lands End Trail Eagles Point, 916 El Camino Del Mar, San Francisco, CA 94121, USA, United States",
+    "lat": 37.7866951,
+    "lng": -122.494827,
+    "image": "https://placehold.co/600x400?text=San%20Francisco%2C%20USA"
+  },
+  {
+    "id": "natgeo_225_80",
+    "name": "Chicago, USA",
+    "category": "natgeo_225",
+    "location": "Alliance of Polish Clubs in the USA, United States",
+    "lat": 41.9309531,
+    "lng": -87.7725545,
+    "image": "https://placehold.co/600x400?text=Chicago%2C%20USA"
+  },
+  {
+    "id": "natgeo_225_81",
+    "name": "Vancouver, Canada",
+    "category": "natgeo_225",
+    "location": "Vancouver, Canada",
+    "lat": 49.2608724,
+    "lng": -123.113952,
+    "image": "https://placehold.co/600x400?text=Vancouver%2C%20Canada"
+  },
+  {
+    "id": "natgeo_225_82",
+    "name": "Montreal, Canada",
+    "category": "natgeo_225",
+    "location": "Montréal, Canada",
+    "lat": 45.5031824,
+    "lng": -73.5698065,
+    "image": "https://placehold.co/600x400?text=Montreal%2C%20Canada"
+  },
+  {
+    "id": "natgeo_225_83",
+    "name": "Quebec City, Canada",
+    "category": "natgeo_225",
+    "location": "Aéroport international Jean-Lesage de Québec, Canada",
+    "lat": 46.7929701,
+    "lng": -71.3845987,
+    "image": "https://placehold.co/600x400?text=Quebec%20City%2C%20Canada"
+  },
+  {
+    "id": "natgeo_225_84",
+    "name": "Mexico City, Mexico",
+    "category": "natgeo_225",
+    "location": "Ciudad de México, México",
+    "lat": 19.3207722,
+    "lng": -99.1514678,
+    "image": "https://placehold.co/600x400?text=Mexico%20City%2C%20Mexico"
+  },
+  {
+    "id": "natgeo_225_85",
+    "name": "Havana, Cuba",
+    "category": "natgeo_225",
+    "location": "La Habana, Cuba",
+    "lat": 23.135305,
+    "lng": -82.3589631,
+    "image": "https://placehold.co/600x400?text=Havana%2C%20Cuba"
+  },
+  {
+    "id": "natgeo_225_86",
+    "name": "Cartagena, Colombia",
+    "category": "natgeo_225",
+    "location": "Cartagena de Indias, Colombia",
+    "lat": 10.4265566,
+    "lng": -75.5441671,
+    "image": "https://placehold.co/600x400?text=Cartagena%2C%20Colombia"
+  },
+  {
+    "id": "natgeo_225_87",
+    "name": "Cusco, Peru",
+    "category": "natgeo_225",
+    "location": "Ciudad del Cusco, Perú",
+    "lat": -13.5169541,
+    "lng": -71.9792712,
+    "image": "https://placehold.co/600x400?text=Cusco%2C%20Peru"
+  },
+  {
+    "id": "natgeo_225_88",
+    "name": "Marrakech, Morocco",
+    "category": "natgeo_225",
+    "location": "Marrakech ⵎⵕⵕⴰⴽⵯⵛ مراكش, Maroc ⵍⵎⵖⵔⵉⴱ المغرب",
+    "lat": 31.6258257,
+    "lng": -7.9891608,
+    "image": "https://placehold.co/600x400?text=Marrakech%2C%20Morocco"
+  },
+  {
+    "id": "natgeo_225_89",
+    "name": "Jaipur, India",
+    "category": "natgeo_225",
+    "location": "Jaipur, India",
+    "lat": 26.9154576,
+    "lng": 75.8189817,
+    "image": "https://placehold.co/600x400?text=Jaipur%2C%20India"
+  },
+  {
+    "id": "natgeo_225_90",
+    "name": "Varanasi, India",
+    "category": "natgeo_225",
+    "location": "Varanasi, India",
+    "lat": 25.3356491,
+    "lng": 83.0076292,
+    "image": "https://placehold.co/600x400?text=Varanasi%2C%20India"
+  },
+  {
+    "id": "natgeo_225_91",
+    "name": "Bangkok, Thailand",
+    "category": "natgeo_225",
+    "location": "กรุงเทพมหานคร, ประเทศไทย",
+    "lat": 13.7524938,
+    "lng": 100.4935089,
+    "image": "https://placehold.co/600x400?text=Bangkok%2C%20Thailand"
+  },
+  {
+    "id": "natgeo_225_92",
+    "name": "Hanoi, Vietnam",
+    "category": "natgeo_225",
+    "location": "Hà Nội, Việt Nam",
+    "lat": 21.0283334,
+    "lng": 105.854041,
+    "image": "https://placehold.co/600x400?text=Hanoi%2C%20Vietnam"
+  },
+  {
+    "id": "natgeo_225_93",
+    "name": "Luang Prabang, Laos",
+    "category": "natgeo_225",
+    "location": "ຫຼວງພະບາງ, ປະເທດລາວ",
+    "lat": 19.8887438,
+    "lng": 102.135898,
+    "image": "https://placehold.co/600x400?text=Luang%20Prabang%2C%20Laos"
+  },
+  {
+    "id": "natgeo_225_94",
+    "name": "Kathmandu, Nepal",
+    "category": "natgeo_225",
+    "location": "काठमाडौं, Nepal",
+    "lat": 27.708317,
+    "lng": 85.3205817,
+    "image": "https://placehold.co/600x400?text=Kathmandu%2C%20Nepal"
+  },
+  {
+    "id": "natgeo_225_95",
+    "name": "Lhasa, China",
+    "category": "natgeo_225",
+    "location": "拉萨市 ལྷ་ས་གྲོང་ཁྱེར།, 中国",
+    "lat": 29.6542054,
+    "lng": 91.1173015,
+    "image": "https://placehold.co/600x400?text=Lhasa%2C%20China"
+  },
+  {
+    "id": "natgeo_225_96",
+    "name": "Reykjavik, Iceland",
+    "category": "natgeo_225",
+    "location": "Reykjavík, Ísland",
+    "lat": 64.145981,
+    "lng": -21.9422367,
+    "image": "https://placehold.co/600x400?text=Reykjavik%2C%20Iceland"
+  },
+  {
+    "id": "natgeo_225_97",
+    "name": "Stockholm, Sweden",
+    "category": "natgeo_225",
+    "location": "Stockholm, Sverige",
+    "lat": 59.3251172,
+    "lng": 18.0710935,
+    "image": "https://placehold.co/600x400?text=Stockholm%2C%20Sweden"
+  },
+  {
+    "id": "natgeo_225_98",
+    "name": "Copenhagen, Denmark",
+    "category": "natgeo_225",
+    "location": "København, Danmark",
+    "lat": 55.6867243,
+    "lng": 12.5700724,
+    "image": "https://placehold.co/600x400?text=Copenhagen%2C%20Denmark"
+  },
+  {
+    "id": "natgeo_225_99",
+    "name": "Oslo, Norway",
+    "category": "natgeo_225",
+    "location": "Oslo, Norge",
+    "lat": 59.9133301,
+    "lng": 10.7389701,
+    "image": "https://placehold.co/600x400?text=Oslo%2C%20Norway"
+  },
+  {
+    "id": "natgeo_225_100",
+    "name": "Helsinki, Finland",
+    "category": "natgeo_225",
+    "location": "Helsinki, Suomi",
+    "lat": 60.1666204,
+    "lng": 24.9435408,
+    "image": "https://placehold.co/600x400?text=Helsinki%2C%20Finland"
+  },
+  {
+    "id": "natgeo_225_101",
+    "name": "Grand Canyon, USA",
+    "category": "natgeo_225",
+    "location": "Grand Canyon, United States",
+    "lat": 36.0980405,
+    "lng": -112.0962787,
+    "image": "https://placehold.co/600x400?text=Grand%20Canyon%2C%20USA"
+  },
+  {
+    "id": "natgeo_225_102",
+    "name": "Yellowstone National Park, USA",
+    "category": "natgeo_225",
+    "location": "Yellowstone National Park, United States",
+    "lat": 44.6200885,
+    "lng": -110.5606893,
+    "image": "https://placehold.co/600x400?text=Yellowstone%20National%20Park%2C%20USA"
+  },
+  {
+    "id": "natgeo_225_103",
+    "name": "Yosemite National Park, USA",
+    "category": "natgeo_225",
+    "location": "Yosemite National Park, United States",
+    "lat": 37.8393004,
+    "lng": -119.5164635,
+    "image": "https://placehold.co/600x400?text=Yosemite%20National%20Park%2C%20USA"
+  },
+  {
+    "id": "natgeo_225_104",
+    "name": "Zion National Park, USA",
+    "category": "natgeo_225",
+    "location": "Zion National Park, United States",
+    "lat": 37.3221673,
+    "lng": -113.0047934,
+    "image": "https://placehold.co/600x400?text=Zion%20National%20Park%2C%20USA"
+  },
+  {
+    "id": "natgeo_225_105",
+    "name": "Bryce Canyon, USA",
+    "category": "natgeo_225",
+    "location": "Bryce Canyon Lane, United States",
+    "lat": 32.825685,
+    "lng": -109.7525362,
+    "image": "https://placehold.co/600x400?text=Bryce%20Canyon%2C%20USA"
+  },
+  {
+    "id": "natgeo_225_106",
+    "name": "Banff National Park, Canada",
+    "category": "natgeo_225",
+    "location": "Banff National Park, Canada",
+    "lat": 51.4881335,
+    "lng": -115.9380498,
+    "image": "https://placehold.co/600x400?text=Banff%20National%20Park%2C%20Canada"
+  },
+  {
+    "id": "natgeo_225_107",
+    "name": "Jasper National Park, Canada",
+    "category": "natgeo_225",
+    "location": "Jasper National Park, Canada",
+    "lat": 52.8041035,
+    "lng": -117.8048267,
+    "image": "https://placehold.co/600x400?text=Jasper%20National%20Park%2C%20Canada"
+  },
+  {
+    "id": "natgeo_225_108",
+    "name": "Torres del Paine, Chile",
+    "category": "natgeo_225",
+    "location": "Parque Nacional Torres del Paine, Chile",
+    "lat": -51.0405776,
+    "lng": -72.9845251,
+    "image": "https://placehold.co/600x400?text=Torres%20del%20Paine%2C%20Chile"
+  },
+  {
+    "id": "natgeo_225_109",
+    "name": "Iguazu Falls, Argentina/Brazil",
+    "category": "natgeo_225",
+    "location": "Iguazú Falls, Brasil",
+    "lat": -25.693905,
+    "lng": -54.4365376,
+    "image": "https://placehold.co/600x400?text=Iguazu%20Falls%2C%20Argentina/Brazil"
+  },
+  {
+    "id": "natgeo_225_110",
+    "name": "Victoria Falls, Zambia/Zimbabwe",
+    "category": "natgeo_225",
+    "location": "Victoria Falls, Zimbabwe",
+    "lat": -17.9349458,
+    "lng": 25.8252767,
+    "image": "https://placehold.co/600x400?text=Victoria%20Falls%2C%20Zambia/Zimbabwe"
+  },
+  {
+    "id": "natgeo_225_111",
+    "name": "Niagara Falls, Canada/USA",
+    "category": "natgeo_225",
+    "location": "Niagara Falls, Canada",
+    "lat": 43.1065603,
+    "lng": -79.0639039,
+    "image": "https://placehold.co/600x400?text=Niagara%20Falls%2C%20Canada/USA"
+  },
+  {
+    "id": "natgeo_225_112",
+    "name": "Angel Falls, Venezuela",
+    "category": "natgeo_225",
+    "location": "Salto Ángel, Venezuela",
+    "lat": 5.968829,
+    "lng": -62.5361495,
+    "image": "https://placehold.co/600x400?text=Angel%20Falls%2C%20Venezuela"
+  },
+  {
+    "id": "natgeo_225_113",
+    "name": "Amazon Rainforest, Brazil",
+    "category": "natgeo_225",
+    "location": "Concesión para Conservación Amazon Rainforest, Perú",
+    "lat": -5.4517351,
+    "lng": -74.3153562,
+    "image": "https://placehold.co/600x400?text=Amazon%20Rainforest%2C%20Brazil"
+  },
+  {
+    "id": "natgeo_225_114",
+    "name": "Galapagos Islands, Ecuador",
+    "category": "natgeo_225",
+    "location": "Archipélago de Galápagos, Ecuador",
+    "lat": -0.628815,
+    "lng": -90.3638752,
+    "image": "https://placehold.co/600x400?text=Galapagos%20Islands%2C%20Ecuador"
+  },
+  {
+    "id": "natgeo_225_115",
+    "name": "Serengeti National Park, Tanzania",
+    "category": "natgeo_225",
+    "location": "Serengeti National Park, Tanzania",
+    "lat": -2.3712909,
+    "lng": 34.6983828,
+    "image": "https://placehold.co/600x400?text=Serengeti%20National%20Park%2C%20Tanzania"
+  },
+  {
+    "id": "natgeo_225_116",
+    "name": "Masai Mara, Kenya",
+    "category": "natgeo_225",
+    "location": "Masai Mara National Reserve, Kenya",
+    "lat": -1.4881431,
+    "lng": 35.1054095,
+    "image": "https://placehold.co/600x400?text=Masai%20Mara%2C%20Kenya"
+  },
+  {
+    "id": "natgeo_225_117",
+    "name": "Kruger National Park, South Africa",
+    "category": "natgeo_225",
+    "location": "Kruger National Park, South Africa",
+    "lat": -23.9357763,
+    "lng": 31.5083741,
+    "image": "https://placehold.co/600x400?text=Kruger%20National%20Park%2C%20South%20Africa"
+  },
+  {
+    "id": "natgeo_225_118",
+    "name": "Okavango Delta, Botswana",
+    "category": "natgeo_225",
+    "location": "Okavango Delta, Botswana",
+    "lat": -19.1540046,
+    "lng": 22.9800936,
+    "image": "https://placehold.co/600x400?text=Okavango%20Delta%2C%20Botswana"
+  },
+  {
+    "id": "natgeo_225_119",
+    "name": "Ngorongoro Crater, Tanzania",
+    "category": "natgeo_225",
+    "location": "Ngorongoro Crater, Tanzania",
+    "lat": -3.1766341,
+    "lng": 35.5788125,
+    "image": "https://placehold.co/600x400?text=Ngorongoro%20Crater%2C%20Tanzania"
+  },
+  {
+    "id": "natgeo_225_120",
+    "name": "Mount Kilimanjaro, Tanzania",
+    "category": "natgeo_225",
+    "location": "Mount kilimanjaro lodge, Tanzania",
+    "lat": -4.2878825,
+    "lng": 33.8802707,
+    "image": "https://placehold.co/600x400?text=Mount%20Kilimanjaro%2C%20Tanzania"
+  },
+  {
+    "id": "natgeo_225_121",
+    "name": "Sahara Desert, North Africa",
+    "category": "natgeo_225",
+    "location": "Sahara Desert Luxury Camp, Maroc ⵍⵎⵖⵔⵉⴱ المغرب",
+    "lat": 31.0894498,
+    "lng": -3.9652269,
+    "image": "https://placehold.co/600x400?text=Sahara%20Desert%2C%20North%20Africa"
+  },
+  {
+    "id": "natgeo_225_122",
+    "name": "Namib Desert, Namibia",
+    "category": "natgeo_225",
+    "location": "Namib, Namibia",
+    "lat": -24.9095034,
+    "lng": 15.3320118,
+    "image": "https://placehold.co/600x400?text=Namib%20Desert%2C%20Namibia"
+  },
+  {
+    "id": "natgeo_225_123",
+    "name": "Salar de Uyuni, Bolivia",
+    "category": "natgeo_225",
+    "location": "Salar de Uyuni, Bolivia",
+    "lat": -20.2042644,
+    "lng": -67.5149954,
+    "image": "https://placehold.co/600x400?text=Salar%20de%20Uyuni%2C%20Bolivia"
+  },
+  {
+    "id": "natgeo_225_124",
+    "name": "Atacama Desert, Chile",
+    "category": "natgeo_225",
+    "location": "Desierto de Atacama, Chile",
+    "lat": -24.5563029,
+    "lng": -69.4226479,
+    "image": "https://placehold.co/600x400?text=Atacama%20Desert%2C%20Chile"
+  },
+  {
+    "id": "natgeo_225_125",
+    "name": "Ha Long Bay, Vietnam",
+    "category": "natgeo_225",
+    "location": "Vịnh Hạ Long, Việt Nam",
+    "lat": 20.9084384,
+    "lng": 107.0682782,
+    "image": "https://placehold.co/600x400?text=Ha%20Long%20Bay%2C%20Vietnam"
+  },
+  {
+    "id": "natgeo_225_126",
+    "name": "Jeju Island, South Korea",
+    "category": "natgeo_225",
+    "location": "제주도, 대한민국",
+    "lat": 33.3803475,
+    "lng": 126.5482545,
+    "image": "https://placehold.co/600x400?text=Jeju%20Island%2C%20South%20Korea"
+  },
+  {
+    "id": "natgeo_225_127",
+    "name": "Plitvice Lakes, Croatia",
+    "category": "natgeo_225",
+    "location": "Nacionalni park Plitvička jezera, Hrvatska",
+    "lat": 44.8523012,
+    "lng": 15.590349,
+    "image": "https://placehold.co/600x400?text=Plitvice%20Lakes%2C%20Croatia"
+  },
+  {
+    "id": "natgeo_225_128",
+    "name": "Lake Bled, Slovenia",
+    "category": "natgeo_225",
+    "location": "Blejsko jezero, Slovenija",
+    "lat": 46.3639132,
+    "lng": 14.0938069,
+    "image": "https://placehold.co/600x400?text=Lake%20Bled%2C%20Slovenia"
+  },
+  {
+    "id": "natgeo_225_129",
+    "name": "Matterhorn, Switzerland",
+    "category": "natgeo_225",
+    "location": "Klein Matterhorn, Schweiz/Suisse/Svizzera/Svizra",
+    "lat": 45.9383601,
+    "lng": 7.7298888,
+    "image": "https://placehold.co/600x400?text=Matterhorn%2C%20Switzerland"
+  },
+  {
+    "id": "natgeo_225_130",
+    "name": "Mont Blanc, France/Italy",
+    "category": "natgeo_225",
+    "location": "Mont Blanc / Monte Bianco, France",
+    "lat": 45.8327056,
+    "lng": 6.8651706,
+    "image": "https://placehold.co/600x400?text=Mont%20Blanc%2C%20France/Italy"
+  },
+  {
+    "id": "natgeo_225_131",
+    "name": "Jungfraujoch, Switzerland",
+    "category": "natgeo_225",
+    "location": "Jungfraujoch, Schweiz/Suisse/Svizzera/Svizra",
+    "lat": 46.5475788,
+    "lng": 7.9789741,
+    "image": "https://placehold.co/600x400?text=Jungfraujoch%2C%20Switzerland"
+  },
+  {
+    "id": "natgeo_225_132",
+    "name": "Cliffs of Moher, Ireland",
+    "category": "natgeo_225",
+    "location": "Cliffs of Moher, Éire / Ireland",
+    "lat": 52.9595342,
+    "lng": -9.4440647,
+    "image": "https://placehold.co/600x400?text=Cliffs%20of%20Moher%2C%20Ireland"
+  },
+  {
+    "id": "natgeo_225_133",
+    "name": "Giant's Causeway, UK",
+    "category": "natgeo_225",
+    "location": "Giant's Causeway, United Kingdom",
+    "lat": 55.2407478,
+    "lng": -6.5115492,
+    "image": "https://placehold.co/600x400?text=Giant%27s%20Causeway%2C%20UK"
+  },
+  {
+    "id": "natgeo_225_134",
+    "name": "Fiordland National Park, New Zealand",
+    "category": "natgeo_225",
+    "location": "Fiordland National Park, New Zealand / Aotearoa",
+    "lat": -45.2915528,
+    "lng": 167.4879931,
+    "image": "https://placehold.co/600x400?text=Fiordland%20National%20Park%2C%20New%20Zealand"
+  },
+  {
+    "id": "natgeo_225_135",
+    "name": "Milford Sound, New Zealand",
+    "category": "natgeo_225",
+    "location": "Milford Sound / Piopiotahi, New Zealand / Aotearoa",
+    "lat": -44.6190189,
+    "lng": 167.8687603,
+    "image": "https://placehold.co/600x400?text=Milford%20Sound%2C%20New%20Zealand"
+  },
+  {
+    "id": "natgeo_225_136",
+    "name": "Great Barrier Reef, Australia",
+    "category": "natgeo_225",
+    "location": "Great Barrier Reef, Australia",
+    "lat": -16.35,
+    "lng": 145.9,
+    "image": "https://placehold.co/600x400?text=Great%20Barrier%20Reef%2C%20Australia"
+  },
+  {
+    "id": "natgeo_225_137",
+    "name": "Uluru, Australia",
+    "category": "natgeo_225",
+    "location": "Uluṟu, Australia",
+    "lat": -25.344857,
+    "lng": 131.0325171,
+    "image": "https://placehold.co/600x400?text=Uluru%2C%20Australia"
+  },
+  {
+    "id": "natgeo_225_138",
+    "name": "Twelve Apostles, Australia",
+    "category": "natgeo_225",
+    "location": "The Twelve Apostles, Australia",
+    "lat": -38.6602846,
+    "lng": 143.0933579,
+    "image": "https://placehold.co/600x400?text=Twelve%20Apostles%2C%20Australia"
+  },
+  {
+    "id": "natgeo_225_139",
+    "name": "Bora Bora, French Polynesia",
+    "category": "natgeo_225",
+    "location": "Bora-Bora, France",
+    "lat": -16.5043467,
+    "lng": -151.7366886,
+    "image": "https://placehold.co/600x400?text=Bora%20Bora%2C%20French%20Polynesia"
+  },
+  {
+    "id": "natgeo_225_140",
+    "name": "Maldives",
+    "category": "natgeo_225",
+    "location": "ދިވެހިރާއްޖެ, ދިވެހިރާއްޖެ",
+    "lat": 3.7203503,
+    "lng": 73.2244152,
+    "image": "https://placehold.co/600x400?text=Maldives"
+  },
+  {
+    "id": "natgeo_225_141",
+    "name": "Seychelles",
+    "category": "natgeo_225",
+    "location": "Seychelles, Sesel",
+    "lat": -4.6574977,
+    "lng": 55.4540146,
+    "image": "https://placehold.co/600x400?text=Seychelles"
+  },
+  {
+    "id": "natgeo_225_142",
+    "name": "Mauritius",
+    "category": "natgeo_225",
+    "location": "Mauritius / Maurice, Mauritius",
+    "lat": -20.2759451,
+    "lng": 57.5703566,
+    "image": "https://placehold.co/600x400?text=Mauritius"
+  },
+  {
+    "id": "natgeo_225_143",
+    "name": "Santorini, Greece",
+    "category": "natgeo_225",
+    "location": "Σαντορίνη, Ελλάς",
+    "lat": 36.4071112,
+    "lng": 25.4566637,
+    "image": "https://placehold.co/600x400?text=Santorini%2C%20Greece"
+  },
+  {
+    "id": "natgeo_225_144",
+    "name": "Capri, Italy",
+    "category": "natgeo_225",
+    "location": "Capri, Italia",
+    "lat": 40.5488429,
+    "lng": 14.2283708,
+    "image": "https://placehold.co/600x400?text=Capri%2C%20Italy"
+  },
+  {
+    "id": "natgeo_225_145",
+    "name": "Mount Everest, Nepal/China",
+    "category": "natgeo_225",
+    "location": "珠穆朗玛峰 ཇོ་མོ་གླང་མ། सगरमाथा, Nepal",
+    "lat": 27.9880614,
+    "lng": 86.92521,
+    "image": "https://placehold.co/600x400?text=Mount%20Everest%2C%20Nepal/China"
+  },
+  {
+    "id": "natgeo_225_146",
+    "name": "Ayers Rock, Australia",
+    "category": "natgeo_225",
+    "location": "Ayers Rock Airport, Australia",
+    "lat": -25.1818267,
+    "lng": 130.9757945,
+    "image": "https://placehold.co/600x400?text=Ayers%20Rock%2C%20Australia"
+  },
+  {
+    "id": "natgeo_225_147",
+    "name": "K2, Pakistan/China",
+    "category": "natgeo_225",
+    "location": "乔戈里峰 کے ٹو, پاکستان",
+    "lat": 35.8816822,
+    "lng": 76.5133308,
+    "image": "https://placehold.co/600x400?text=K2%2C%20Pakistan/China"
+  },
+  {
+    "id": "natgeo_225_148",
+    "name": "Denali National Park, USA",
+    "category": "natgeo_225",
+    "location": "McKinley National Park Airport, United States",
+    "lat": 63.7320768,
+    "lng": -148.9113185,
+    "image": "https://placehold.co/600x400?text=Denali%20National%20Park%2C%20USA"
+  },
+  {
+    "id": "natgeo_225_149",
+    "name": "Glacier National Park, USA",
+    "category": "natgeo_225",
+    "location": "Glacier Bay National Park, United States",
+    "lat": 58.8141751,
+    "lng": -136.8720935,
+    "image": "https://placehold.co/600x400?text=Glacier%20National%20Park%2C%20USA"
+  },
+  {
+    "id": "natgeo_225_150",
+    "name": "Antarctica",
+    "category": "natgeo_225",
+    "location": "Antarctica",
+    "lat": -79.4063075,
+    "lng": 0.3149312,
+    "image": "https://placehold.co/600x400?text=Antarctica"
+  },
+  {
+    "id": "natgeo_225_151",
+    "name": "Amalfi Coast, Italy",
+    "category": "natgeo_225",
+    "location": "Ospedale della costa, Italia",
+    "lat": 40.6383861,
+    "lng": 14.6122789,
+    "image": "https://placehold.co/600x400?text=Amalfi%20Coast%2C%20Italy"
+  },
+  {
+    "id": "natgeo_225_152",
+    "name": "Cinque Terre, Italy",
+    "category": "natgeo_225",
+    "location": "Cinque Terre, Italia",
+    "lat": 44.1222144,
+    "lng": 9.7132501,
+    "image": "https://placehold.co/600x400?text=Cinque%20Terre%2C%20Italy"
+  },
+  {
+    "id": "natgeo_225_153",
+    "name": "French Riviera, France",
+    "category": "natgeo_225",
+    "location": "Riviera Française, France",
+    "lat": 43.9525507,
+    "lng": 7.4794283,
+    "image": "https://placehold.co/600x400?text=French%20Riviera%2C%20France"
+  },
+  {
+    "id": "natgeo_225_154",
+    "name": "Tahiti, French Polynesia",
+    "category": "natgeo_225",
+    "location": "Tahiti, France",
+    "lat": -17.6873439,
+    "lng": -149.4451681,
+    "image": "https://placehold.co/600x400?text=Tahiti%2C%20French%20Polynesia"
+  },
+  {
+    "id": "natgeo_225_155",
+    "name": "Fiji",
+    "category": "natgeo_225",
+    "location": "Fiji, Viti",
+    "lat": -18.1239696,
+    "lng": 179.0122737,
+    "image": "https://placehold.co/600x400?text=Fiji"
+  },
+  {
+    "id": "natgeo_225_156",
+    "name": "Cook Islands",
+    "category": "natgeo_225",
+    "location": "Kūki ʻĀirani, Kūki 'Āirani",
+    "lat": -19.9969715,
+    "lng": -157.7858714,
+    "image": "https://placehold.co/600x400?text=Cook%20Islands"
+  },
+  {
+    "id": "natgeo_225_157",
+    "name": "Whitsunday Islands, Australia",
+    "category": "natgeo_225",
+    "location": "Whitsunday Islands National Park, Australia",
+    "lat": -20.1189023,
+    "lng": 148.9134288,
+    "image": "https://placehold.co/600x400?text=Whitsunday%20Islands%2C%20Australia"
+  },
+  {
+    "id": "natgeo_225_158",
+    "name": "Maui, Hawaii, USA",
+    "category": "natgeo_225",
+    "location": "Maui Hawaiian Grill, United States",
+    "lat": 33.3778861,
+    "lng": -111.9365905,
+    "image": "https://placehold.co/600x400?text=Maui%2C%20Hawaii%2C%20USA"
+  },
+  {
+    "id": "natgeo_225_159",
+    "name": "Kauai, Hawaii, USA",
+    "category": "natgeo_225",
+    "location": "Kauaʻi, United States",
+    "lat": 22.0503838,
+    "lng": -159.5588624,
+    "image": "https://placehold.co/600x400?text=Kauai%2C%20Hawaii%2C%20USA"
+  },
+  {
+    "id": "natgeo_225_160",
+    "name": "Bali, Indonesia",
+    "category": "natgeo_225",
+    "location": "Bali, Indonesia",
+    "lat": -8.2271303,
+    "lng": 115.1919203,
+    "image": "https://placehold.co/600x400?text=Bali%2C%20Indonesia"
+  },
+  {
+    "id": "natgeo_225_161",
+    "name": "Phuket, Thailand",
+    "category": "natgeo_225",
+    "location": "จังหวัดภูเก็ต, ประเทศไทย",
+    "lat": 7.9366015,
+    "lng": 98.3529292,
+    "image": "https://placehold.co/600x400?text=Phuket%2C%20Thailand"
+  },
+  {
+    "id": "natgeo_225_162",
+    "name": "Koh Samui, Thailand",
+    "category": "natgeo_225",
+    "location": "Vikasa Yoga Retreat Koh Samui Thailand, ประเทศไทย",
+    "lat": 9.4766692,
+    "lng": 100.0676752,
+    "image": "https://placehold.co/600x400?text=Koh%20Samui%2C%20Thailand"
+  },
+  {
+    "id": "natgeo_225_163",
+    "name": "Langkawi, Malaysia",
+    "category": "natgeo_225",
+    "location": "Pulau Langkawi, Malaysia",
+    "lat": 6.3682606,
+    "lng": 99.7929851,
+    "image": "https://placehold.co/600x400?text=Langkawi%2C%20Malaysia"
+  },
+  {
+    "id": "natgeo_225_164",
+    "name": "Boracay, Philippines",
+    "category": "natgeo_225",
+    "location": "Boracay, Philippines",
+    "lat": 11.9693692,
+    "lng": 121.9227339,
+    "image": "https://placehold.co/600x400?text=Boracay%2C%20Philippines"
+  },
+  {
+    "id": "natgeo_225_165",
+    "name": "Palawan, Philippines",
+    "category": "natgeo_225",
+    "location": "Palawan, Philippines",
+    "lat": 11.0798978,
+    "lng": 120.9373422,
+    "image": "https://placehold.co/600x400?text=Palawan%2C%20Philippines"
+  },
+  {
+    "id": "natgeo_225_166",
+    "name": "Mykonos, Greece",
+    "category": "natgeo_225",
+    "location": "Δήμος Μυκόνου, Ελλάς",
+    "lat": 37.4513937,
+    "lng": 25.3923149,
+    "image": "https://placehold.co/600x400?text=Mykonos%2C%20Greece"
+  },
+  {
+    "id": "natgeo_225_167",
+    "name": "Crete, Greece",
+    "category": "natgeo_225",
+    "location": "Κρήτη, Ελλάς",
+    "lat": 35.3084952,
+    "lng": 24.4633423,
+    "image": "https://placehold.co/600x400?text=Crete%2C%20Greece"
+  },
+  {
+    "id": "natgeo_225_168",
+    "name": "Corsica, France",
+    "category": "natgeo_225",
+    "location": "Corse, France",
+    "lat": 42.188098,
+    "lng": 9.0683139,
+    "image": "https://placehold.co/600x400?text=Corsica%2C%20France"
+  },
+  {
+    "id": "natgeo_225_169",
+    "name": "Sardinia, Italy",
+    "category": "natgeo_225",
+    "location": "Sardigna/Sardegna, Italia",
+    "lat": 40.0912813,
+    "lng": 9.0305773,
+    "image": "https://placehold.co/600x400?text=Sardinia%2C%20Italy"
+  },
+  {
+    "id": "natgeo_225_170",
+    "name": "Sicily, Italy",
+    "category": "natgeo_225",
+    "location": "Sicilia, Italia",
+    "lat": 37.587794,
+    "lng": 14.155048,
+    "image": "https://placehold.co/600x400?text=Sicily%2C%20Italy"
+  },
+  {
+    "id": "natgeo_225_171",
+    "name": "Mallorca, Spain",
+    "category": "natgeo_225",
+    "location": "Mallorca, España",
+    "lat": 39.613432,
+    "lng": 2.8829185,
+    "image": "https://placehold.co/600x400?text=Mallorca%2C%20Spain"
+  },
+  {
+    "id": "natgeo_225_172",
+    "name": "Ibiza, Spain",
+    "category": "natgeo_225",
+    "location": "Eivissa, España",
+    "lat": 38.9743901,
+    "lng": 1.4197463,
+    "image": "https://placehold.co/600x400?text=Ibiza%2C%20Spain"
+  },
+  {
+    "id": "natgeo_225_173",
+    "name": "Canary Islands, Spain",
+    "category": "natgeo_225",
+    "location": "Canarias, España",
+    "lat": 28.2935785,
+    "lng": -16.6214471,
+    "image": "https://placehold.co/600x400?text=Canary%20Islands%2C%20Spain"
+  },
+  {
+    "id": "natgeo_225_174",
+    "name": "Azores, Portugal",
+    "category": "natgeo_225",
+    "location": "Arquipélago dos Açores, Portugal",
+    "lat": 37.8085565,
+    "lng": -25.4731374,
+    "image": "https://placehold.co/600x400?text=Azores%2C%20Portugal"
+  },
+  {
+    "id": "natgeo_225_175",
+    "name": "Madeira, Portugal",
+    "category": "natgeo_225",
+    "location": "Madeira, Portugal",
+    "lat": 32.7517501,
+    "lng": -16.9817487,
+    "image": "https://placehold.co/600x400?text=Madeira%2C%20Portugal"
+  },
+  {
+    "id": "natgeo_225_176",
+    "name": "Key West, USA",
+    "category": "natgeo_225",
+    "location": "Key West, United States",
+    "lat": 30.4195437,
+    "lng": -87.8596865,
+    "image": "https://placehold.co/600x400?text=Key%20West%2C%20USA"
+  },
+  {
+    "id": "natgeo_225_177",
+    "name": "Bahamas",
+    "category": "natgeo_225",
+    "location": "Bahamas, The Bahamas",
+    "lat": 24.7736546,
+    "lng": -78.0000547,
+    "image": "https://placehold.co/600x400?text=Bahamas"
+  },
+  {
+    "id": "natgeo_225_178",
+    "name": "Turks and Caicos",
+    "category": "natgeo_225",
+    "location": "Turks and Caicos Islands, Turks and Caicos Islands",
+    "lat": 21.721746,
+    "lng": -71.5527809,
+    "image": "https://placehold.co/600x400?text=Turks%20and%20Caicos"
+  },
+  {
+    "id": "natgeo_225_179",
+    "name": "US Virgin Islands",
+    "category": "natgeo_225",
+    "location": "United States Virgin Islands, United States",
+    "lat": 17.789187,
+    "lng": -64.7080574,
+    "image": "https://placehold.co/600x400?text=US%20Virgin%20Islands"
+  },
+  {
+    "id": "natgeo_225_180",
+    "name": "British Virgin Islands",
+    "category": "natgeo_225",
+    "location": "British Virgin Islands, British Virgin Islands",
+    "lat": 18.4024395,
+    "lng": -64.5661642,
+    "image": "https://placehold.co/600x400?text=British%20Virgin%20Islands"
+  },
+  {
+    "id": "natgeo_225_181",
+    "name": "St. Lucia",
+    "category": "natgeo_225",
+    "location": "Saint Lucia, Saint Lucia",
+    "lat": 13.8250489,
+    "lng": -60.975036,
+    "image": "https://placehold.co/600x400?text=St.%20Lucia"
+  },
+  {
+    "id": "natgeo_225_182",
+    "name": "Barbados",
+    "category": "natgeo_225",
+    "location": "Barbados, Barbados",
+    "lat": 13.1500331,
+    "lng": -59.5250305,
+    "image": "https://placehold.co/600x400?text=Barbados"
+  },
+  {
+    "id": "natgeo_225_183",
+    "name": "Tulum Beach, Mexico",
+    "category": "natgeo_225",
+    "location": "Tulum beach, México",
+    "lat": 20.2086114,
+    "lng": -87.4304296,
+    "image": "https://placehold.co/600x400?text=Tulum%20Beach%2C%20Mexico"
+  },
+  {
+    "id": "natgeo_225_184",
+    "name": "Galapagos Islands",
+    "category": "natgeo_225",
+    "location": "Archipélago de Galápagos, Ecuador",
+    "lat": -0.628815,
+    "lng": -90.3638752,
+    "image": "https://placehold.co/600x400?text=Galapagos%20Islands"
+  },
+  {
+    "id": "natgeo_225_185",
+    "name": "Seychelles",
+    "category": "natgeo_225",
+    "location": "Seychelles, Sesel",
+    "lat": -4.6574977,
+    "lng": 55.4540146,
+    "image": "https://placehold.co/600x400?text=Seychelles"
+  },
+  {
+    "id": "natgeo_225_186",
+    "name": "Maldive Islands",
+    "category": "natgeo_225",
+    "location": "The Ritz Carlton Maldives Fari Islands, ދިވެހިރާއްޖެ",
+    "lat": 4.6042215,
+    "lng": 73.5805281,
+    "image": "https://placehold.co/600x400?text=Maldive%20Islands"
+  },
+  {
+    "id": "natgeo_225_187",
+    "name": "Raja Ampat, Indonesia",
+    "category": "natgeo_225",
+    "location": "Raja Ampat Islands, Indonesia",
+    "lat": -1.7627849,
+    "lng": 130.1443213,
+    "image": "https://placehold.co/600x400?text=Raja%20Ampat%2C%20Indonesia"
+  },
+  {
+    "id": "natgeo_225_188",
+    "name": "Komodo Island, Indonesia",
+    "category": "natgeo_225",
+    "location": "Pulau Komodo, Indonesia",
+    "lat": -8.5891905,
+    "lng": 119.4624119,
+    "image": "https://placehold.co/600x400?text=Komodo%20Island%2C%20Indonesia"
+  },
+  {
+    "id": "natgeo_225_189",
+    "name": "Zanzibar, Tanzania",
+    "category": "natgeo_225",
+    "location": "Zanzibar زنجبار, Tanzania",
+    "lat": -6.0999709,
+    "lng": 39.3209535,
+    "image": "https://placehold.co/600x400?text=Zanzibar%2C%20Tanzania"
+  },
+  {
+    "id": "natgeo_225_190",
+    "name": "Madagascar",
+    "category": "natgeo_225",
+    "location": "Madagascar, Madagasikara",
+    "lat": -18.9249604,
+    "lng": 46.4416422,
+    "image": "https://placehold.co/600x400?text=Madagascar"
+  },
+  {
+    "id": "natgeo_225_191",
+    "name": "Faroe Islands, Denmark",
+    "category": "natgeo_225",
+    "location": "Hus fra Mule, Bordø, Færøerne, Danmark",
+    "lat": 55.7894155,
+    "lng": 12.4976698,
+    "image": "https://placehold.co/600x400?text=Faroe%20Islands%2C%20Denmark"
+  },
+  {
+    "id": "natgeo_225_192",
+    "name": "Lofoten Islands, Norway",
+    "category": "natgeo_225",
+    "location": "Salten og Lofoten tingrett - Sálto ja Lufåhta diggeriektá, Norge",
+    "lat": 67.2831972,
+    "lng": 14.3731855,
+    "image": "https://placehold.co/600x400?text=Lofoten%20Islands%2C%20Norway"
+  },
+  {
+    "id": "natgeo_225_193",
+    "name": "Svalbard, Norway",
+    "category": "natgeo_225",
+    "location": "Svalbard, Norge",
+    "lat": 78.75,
+    "lng": 20.35,
+    "image": "https://placehold.co/600x400?text=Svalbard%2C%20Norway"
+  },
+  {
+    "id": "natgeo_225_194",
+    "name": "Aitutaki, Cook Islands",
+    "category": "natgeo_225",
+    "location": "Aitutaki, Kūki 'Āirani",
+    "lat": -18.8883781,
+    "lng": -159.7831878,
+    "image": "https://placehold.co/600x400?text=Aitutaki%2C%20Cook%20Islands"
+  },
+  {
+    "id": "natgeo_225_195",
+    "name": "Palau",
+    "category": "natgeo_225",
+    "location": "Belau, Belau",
+    "lat": 5.3783537,
+    "lng": 132.9102573,
+    "image": "https://placehold.co/600x400?text=Palau"
+  },
+  {
+    "id": "natgeo_225_196",
+    "name": "Antelope Canyon, USA",
+    "category": "natgeo_225",
+    "location": "Antelope Canyon, United States",
+    "lat": 36.930266,
+    "lng": -111.4219676,
+    "image": "https://placehold.co/600x400?text=Antelope%20Canyon%2C%20USA"
+  },
+  {
+    "id": "natgeo_225_197",
+    "name": "Horseshoe Bend, USA",
+    "category": "natgeo_225",
+    "location": "Horseshoe Bend, United States",
+    "lat": 36.2200685,
+    "lng": -91.7474413,
+    "image": "https://placehold.co/600x400?text=Horseshoe%20Bend%2C%20USA"
+  },
+  {
+    "id": "natgeo_225_198",
+    "name": "Monument Valley, USA",
+    "category": "natgeo_225",
+    "location": "Monument Valley Navajo Tribal Park, United States",
+    "lat": 36.9823883,
+    "lng": -110.1111116,
+    "image": "https://placehold.co/600x400?text=Monument%20Valley%2C%20USA"
+  },
+  {
+    "id": "natgeo_225_199",
+    "name": "Arches National Park, USA",
+    "category": "natgeo_225",
+    "location": "Arches National Park, United States",
+    "lat": 38.7265253,
+    "lng": -109.5630457,
+    "image": "https://placehold.co/600x400?text=Arches%20National%20Park%2C%20USA"
+  },
+  {
+    "id": "natgeo_225_200",
+    "name": "Canyonlands, USA",
+    "category": "natgeo_225",
+    "location": "West Canyonlands Court, United States",
+    "lat": 33.2158346,
+    "lng": -111.5775023,
+    "image": "https://placehold.co/600x400?text=Canyonlands%2C%20USA"
+  },
+  {
+    "id": "natgeo_225_201",
+    "name": "Death Valley, USA",
+    "category": "natgeo_225",
+    "location": "Death Valley Lake, United States",
+    "lat": 36.3625199,
+    "lng": -113.250578,
+    "image": "https://placehold.co/600x400?text=Death%20Valley%2C%20USA"
+  },
+  {
+    "id": "natgeo_225_202",
+    "name": "White Sands, USA",
+    "category": "natgeo_225",
+    "location": "White Sands Estate Mobile Home Park, United States",
+    "lat": 33.4105271,
+    "lng": -111.5358164,
+    "image": "https://placehold.co/600x400?text=White%20Sands%2C%20USA"
+  },
+  {
+    "id": "natgeo_225_203",
+    "name": "Badlands National Park, USA",
+    "category": "natgeo_225",
+    "location": "Badlands National Park, United States",
+    "lat": 43.5271059,
+    "lng": -102.3616629,
+    "image": "https://placehold.co/600x400?text=Badlands%20National%20Park%2C%20USA"
+  },
+  {
+    "id": "natgeo_225_204",
+    "name": "Kenai Fjords, USA",
+    "category": "natgeo_225",
+    "location": "Kenai Fjords National Park, United States",
+    "lat": 59.8685631,
+    "lng": -150.0257714,
+    "image": "https://placehold.co/600x400?text=Kenai%20Fjords%2C%20USA"
+  },
+  {
+    "id": "natgeo_225_205",
+    "name": "Lake Louise, Canada",
+    "category": "natgeo_225",
+    "location": "Lake Louise, Canada",
+    "lat": 51.4249668,
+    "lng": -116.177535,
+    "image": "https://placehold.co/600x400?text=Lake%20Louise%2C%20Canada"
+  },
+  {
+    "id": "natgeo_225_206",
+    "name": "Moraine Lake, Canada",
+    "category": "natgeo_225",
+    "location": "Moraine Lake, Canada",
+    "lat": 51.3215664,
+    "lng": -116.1859853,
+    "image": "https://placehold.co/600x400?text=Moraine%20Lake%2C%20Canada"
+  },
+  {
+    "id": "natgeo_225_207",
+    "name": "Peyto Lake, Canada",
+    "category": "natgeo_225",
+    "location": "Peyto Lake, Canada",
+    "lat": 51.7251873,
+    "lng": -116.5222962,
+    "image": "https://placehold.co/600x400?text=Peyto%20Lake%2C%20Canada"
+  },
+  {
+    "id": "natgeo_225_208",
+    "name": "Columbia Icefield, Canada",
+    "category": "natgeo_225",
+    "location": "Columbia Icefield, Canada",
+    "lat": 52.1608944,
+    "lng": -117.3086713,
+    "image": "https://placehold.co/600x400?text=Columbia%20Icefield%2C%20Canada"
+  },
+  {
+    "id": "natgeo_225_209",
+    "name": "Bay of Fundy, Canada",
+    "category": "natgeo_225",
+    "location": "Bay of Fundy, Canada",
+    "lat": 44.8512466,
+    "lng": -66.1977817,
+    "image": "https://placehold.co/600x400?text=Bay%20of%20Fundy%2C%20Canada"
+  },
+  {
+    "id": "natgeo_225_210",
+    "name": "Gros Morne, Canada",
+    "category": "natgeo_225",
+    "location": "Gros Morne National Park, Canada",
+    "lat": 49.6358763,
+    "lng": -57.6534612,
+    "image": "https://placehold.co/600x400?text=Gros%20Morne%2C%20Canada"
+  },
+  {
+    "id": "natgeo_225_211",
+    "name": "Vatnajokull, Iceland",
+    "category": "natgeo_225",
+    "location": "Vatnajökull, Ísland",
+    "lat": 64.3829655,
+    "lng": -16.9257571,
+    "image": "https://placehold.co/600x400?text=Vatnajokull%2C%20Iceland"
+  },
+  {
+    "id": "natgeo_225_212",
+    "name": "Blue Lagoon, Iceland",
+    "category": "natgeo_225",
+    "location": "Bláa lónið, Ísland",
+    "lat": 63.8800487,
+    "lng": -22.4493538,
+    "image": "https://placehold.co/600x400?text=Blue%20Lagoon%2C%20Iceland"
+  },
+  {
+    "id": "natgeo_225_213",
+    "name": "Geysir, Iceland",
+    "category": "natgeo_225",
+    "location": "Stóri Geysir, Ísland",
+    "lat": 64.3138382,
+    "lng": -20.2995104,
+    "image": "https://placehold.co/600x400?text=Geysir%2C%20Iceland"
+  },
+  {
+    "id": "natgeo_225_214",
+    "name": "Gullfoss, Iceland",
+    "category": "natgeo_225",
+    "location": "Gullfoss, Ísland",
+    "lat": 64.327316,
+    "lng": -20.1191026,
+    "image": "https://placehold.co/600x400?text=Gullfoss%2C%20Iceland"
+  },
+  {
+    "id": "natgeo_225_215",
+    "name": "Skogafoss, Iceland",
+    "category": "natgeo_225",
+    "location": "Skógafoss, Ísland",
+    "lat": 63.5321038,
+    "lng": -19.511292,
+    "image": "https://placehold.co/600x400?text=Skogafoss%2C%20Iceland"
+  },
+  {
+    "id": "natgeo_225_216",
+    "name": "Reynisfjara, Iceland",
+    "category": "natgeo_225",
+    "location": "Reynisfjara, Ísland",
+    "lat": 63.4044262,
+    "lng": -19.0586361,
+    "image": "https://placehold.co/600x400?text=Reynisfjara%2C%20Iceland"
+  },
+  {
+    "id": "natgeo_225_217",
+    "name": "Jokulsarlon, Iceland",
+    "category": "natgeo_225",
+    "location": "Jökulsárlón, Ísland",
+    "lat": 64.0783208,
+    "lng": -16.2274213,
+    "image": "https://placehold.co/600x400?text=Jokulsarlon%2C%20Iceland"
+  },
+  {
+    "id": "natgeo_225_218",
+    "name": "Geirangerfjord, Norway",
+    "category": "natgeo_225",
+    "location": "Geirangerfjorden, Norge",
+    "lat": 62.1031443,
+    "lng": 7.0988588,
+    "image": "https://placehold.co/600x400?text=Geirangerfjord%2C%20Norway"
+  },
+  {
+    "id": "natgeo_225_219",
+    "name": "Trolltunga, Norway",
+    "category": "natgeo_225",
+    "location": "Trolltunga, Norge",
+    "lat": 60.1329576,
+    "lng": 6.7539979,
+    "image": "https://placehold.co/600x400?text=Trolltunga%2C%20Norway"
+  },
+  {
+    "id": "natgeo_225_220",
+    "name": "Preikestolen, Norway",
+    "category": "natgeo_225",
+    "location": "Preikestolen, Norge",
+    "lat": 58.9873778,
+    "lng": 6.1892195,
+    "image": "https://placehold.co/600x400?text=Preikestolen%2C%20Norway"
+  },
+  {
+    "id": "natgeo_225_221",
+    "name": "North Cape, Norway",
+    "category": "natgeo_225",
+    "location": "Nordkapp, Norge",
+    "lat": 71.1699506,
+    "lng": 25.7858893,
+    "image": "https://placehold.co/600x400?text=North%20Cape%2C%20Norway"
+  },
+  {
+    "id": "natgeo_225_222",
+    "name": "Lake Como, Italy",
+    "category": "natgeo_225",
+    "location": "Lago di Como, Italia",
+    "lat": 45.9917589,
+    "lng": 9.264881,
+    "image": "https://placehold.co/600x400?text=Lake%20Como%2C%20Italy"
+  },
+  {
+    "id": "natgeo_225_223",
+    "name": "Lake Garda, Italy",
+    "category": "natgeo_225",
+    "location": "Lago di Garda, Italia",
+    "lat": 45.6624314,
+    "lng": 10.6861569,
+    "image": "https://placehold.co/600x400?text=Lake%20Garda%2C%20Italy"
+  },
+  {
+    "id": "natgeo_225_224",
+    "name": "Dolomites, Italy",
+    "category": "natgeo_225",
+    "location": "Dolomiti, Italia",
+    "lat": 46.294572,
+    "lng": 12.0513238,
+    "image": "https://placehold.co/600x400?text=Dolomites%2C%20Italy"
+  },
+  {
+    "id": "natgeo_225_225",
+    "name": "Tuscany, Italy",
+    "category": "natgeo_225",
+    "location": "Toscana, Italia",
+    "lat": 43.4586541,
+    "lng": 11.1389204,
+    "image": "https://placehold.co/600x400?text=Tuscany%2C%20Italy"
+  },
+  {
+    "id": "natgeo_225_226",
+    "name": "Provence, France",
+    "category": "natgeo_225",
+    "location": "Provence-Alpes-Côte d'Azur, France",
+    "lat": 44.0580563,
+    "lng": 6.0638506,
+    "image": "https://placehold.co/600x400?text=Provence%2C%20France"
+  },
+  {
+    "id": "natgeo_225_227",
+    "name": "Alsace, France",
+    "category": "natgeo_225",
+    "location": "Grand Canal d'Alsace, France",
+    "lat": 47.9088811,
+    "lng": 7.5708503,
+    "image": "https://placehold.co/600x400?text=Alsace%2C%20France"
+  },
+  {
+    "id": "natgeo_225_228",
+    "name": "Black Forest, Germany",
+    "category": "natgeo_225",
+    "location": "Schwarzwald, Deutschland",
+    "lat": 48.2634439,
+    "lng": 8.1647488,
+    "image": "https://placehold.co/600x400?text=Black%20Forest%2C%20Germany"
+  },
+  {
+    "id": "natgeo_225_229",
+    "name": "Rhine Valley, Germany",
+    "category": "natgeo_225",
+    "location": "Neandertal, Deutschland",
+    "lat": 51.2282861,
+    "lng": 6.9415779,
+    "image": "https://placehold.co/600x400?text=Rhine%20Valley%2C%20Germany"
+  },
+  {
+    "id": "natgeo_225_230",
+    "name": "Romantic Road, Germany",
+    "category": "natgeo_225",
+    "location": "Romantic Road Feuchtwangen, Deutschland",
+    "lat": 49.1677574,
+    "lng": 10.3311955,
+    "image": "https://placehold.co/600x400?text=Romantic%20Road%2C%20Germany"
+  },
+  {
+    "id": "natgeo_225_231",
+    "name": "Hallstatt, Austria",
+    "category": "natgeo_225",
+    "location": "Hallstatt, Österreich",
+    "lat": 47.5621698,
+    "lng": 13.6486697,
+    "image": "https://placehold.co/600x400?text=Hallstatt%2C%20Austria"
+  },
+  {
+    "id": "natgeo_225_232",
+    "name": "Salzburg, Austria",
+    "category": "natgeo_225",
+    "location": "Salzburg, Österreich",
+    "lat": 47.7981346,
+    "lng": 13.0464806,
+    "image": "https://placehold.co/600x400?text=Salzburg%2C%20Austria"
+  },
+  {
+    "id": "natgeo_225_233",
+    "name": "Grossglockner, Austria",
+    "category": "natgeo_225",
+    "location": "Großglockner, Österreich",
+    "lat": 47.0745464,
+    "lng": 12.6938826,
+    "image": "https://placehold.co/600x400?text=Grossglockner%2C%20Austria"
+  },
+  {
+    "id": "natgeo_225_234",
+    "name": "Swiss Alps, Switzerland",
+    "category": "natgeo_225",
+    "location": "Swiss Alps, Schweiz/Suisse/Svizzera/Svizra",
+    "lat": 46.3802707,
+    "lng": 8.871155,
+    "image": "https://placehold.co/600x400?text=Swiss%20Alps%2C%20Switzerland"
+  },
+  {
+    "id": "natgeo_225_235",
+    "name": "Zermatt, Switzerland",
+    "category": "natgeo_225",
+    "location": "Zermatt, Schweiz/Suisse/Svizzera/Svizra",
+    "lat": 46.0212076,
+    "lng": 7.749254,
+    "image": "https://placehold.co/600x400?text=Zermatt%2C%20Switzerland"
+  }
+]
