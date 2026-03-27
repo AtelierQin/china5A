@@ -37,6 +37,22 @@ const elements = {
     importBtn: document.getElementById('import-btn'),
     importInput: document.getElementById('import-input')
 };
+// Toast Notification Helper
+const showToast = (message, type = 'success') => {
+    const container = document.getElementById('toast-container');
+    if (!container) return;
+    
+    const toast = document.createElement('div');
+    toast.className = `toast ${type}`;
+    toast.innerHTML = message;
+    
+    container.appendChild(toast);
+    
+    setTimeout(() => {
+        toast.classList.add('hiding');
+        setTimeout(() => toast.remove(), 300);
+    }, 3000);
+};
 
 // Map Initialization
 const map = L.map('map', {
@@ -212,8 +228,18 @@ const renderList = () => {
             <div class="item-status"></div>
         `;
         el.onclick = () => {
-            map.flyTo([attr.lat, attr.lng], 10);
-            openModal(attr);
+            map.flyTo([attr.lat, attr.lng], 10, { duration: 1.5 });
+            
+            // Allow user to see map flight by keeping modal closed from list, 
+            // but highlight tooltip to identify the spot
+            if (elements.modal.open) {
+                elements.modal.close();
+            }
+            if (markers[attr.id]) {
+                setTimeout(() => {
+                    markers[attr.id].openTooltip();
+                }, 100);
+            }
         };
         elements.list.appendChild(el);
     });
@@ -222,7 +248,75 @@ const renderList = () => {
 // Modal Logic
 const openModal = (attr) => {
     state.activeId = attr.id;
-    elements.modalImg.src = attr.image;
+    
+    // Clear previous onerror/onload and remove skeleton
+    elements.modalImg.onerror = null;
+    elements.modalImg.onload = null;
+    elements.modalImg.classList.remove('img-loading');
+
+    // Onload handler to remove loading skeleton
+    elements.modalImg.onload = () => {
+        elements.modalImg.classList.remove('img-loading');
+    };
+
+    const isPlaceholder = !attr.image || attr.image.includes('placehold.co');
+    
+    if (!isPlaceholder) {
+        elements.modalImg.src = attr.image;
+    } else {
+        // Set temporary loading state
+        elements.modalImg.classList.add('img-loading');
+        elements.modalImg.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'; // Clean transparent pixel
+        
+        // Fetch from Wikipedia (Try Chinese, then English)
+        const searchName = attr.name.split(',')[0].trim();
+        const zhWikiUrl = `https://zh.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(searchName)}&prop=pageimages&format=json&pithumbsize=800&origin=*`;
+        
+        fetch(zhWikiUrl)
+            .then(res => res.json())
+            .then(data => {
+                if (data.query && data.query.pages) {
+                    const pages = data.query.pages;
+                    const pageId = Object.keys(pages)[0];
+                    if (pageId !== "-1" && pages[pageId].thumbnail) {
+                        if (state.activeId === attr.id) {
+                            elements.modalImg.src = pages[pageId].thumbnail.source;
+                        }
+                    } else {
+                        // Fallback to English Wikipedia
+                        const enWikiUrl = `https://en.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(searchName)}&prop=pageimages&format=json&pithumbsize=800&origin=*`;
+                        return fetch(enWikiUrl);
+                    }
+                }
+            })
+            .then(res => res ? res.json() : null)
+            .then(data => {
+                if (data && data.query && data.query.pages) {
+                    const pages = data.query.pages;
+                    const pageId = Object.keys(pages)[0];
+                    if (pageId !== "-1" && pages[pageId].thumbnail) {
+                        if (state.activeId === attr.id) {
+                            elements.modalImg.src = pages[pageId].thumbnail.source;
+                        }
+                    } else if (state.activeId === attr.id) {
+                        // Keep a more beautiful generic fallback if totally missing
+                        elements.modalImg.src = 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; 
+                    }
+                }
+            })
+            .catch(err => {
+                console.error('Failed to fetch image:', err);
+                if (state.activeId === attr.id) {
+                    elements.modalImg.src = 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
+                }
+            });
+    }
+
+    elements.modalImg.onerror = () => {
+        elements.modalImg.onerror = null; // Prevent infinite loop
+        elements.modalImg.src = 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
+    };
+
     elements.modalId.textContent = typeof attr.id === 'number' ? String(attr.id).padStart(2, '0') : '';
     elements.modalTitle.textContent = attr.name;
     
@@ -298,13 +392,13 @@ const importData = (event) => {
                 // Merge strategy: Union
                 data.visited.forEach(id => state.visited.add(id));
                 saveState();
-                alert(`Successfully imported data! Total visited: ${state.visited.size}`);
+                showToast(`SUCCESSFULLY IMPORTED DATA! TOTAL VISITED: ${state.visited.size}`, 'success');
             } else {
-                alert('Invalid data format: Missing "visited" array.');
+                showToast('INVALID DATA FORMAT: MISSING "VISITED" ARRAY.', 'error');
             }
         } catch (err) {
             console.error(err);
-            alert('Error parsing JSON file.');
+            showToast('ERROR PARSING JSON FILE.', 'error');
         }
         // Reset input
         event.target.value = '';
