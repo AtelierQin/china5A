@@ -11,6 +11,7 @@ This project aims to convert the text-based list of China's 5A scenic spots into
 - **Progress Tracking**: Local storage-based tracking dynamically computed per active category.
 - **Data Export/Import**: Export and import your visited spots data as JSON.
 - **Data Filtering**: Search by name/province and filter by visited status.
+- **Dynamic Image Solution**: Sophisticated SVG art placeholders for missing photos, integrated with a smart Wikipedia Image API fallback and local caching.
 
 ## Project Structure
 

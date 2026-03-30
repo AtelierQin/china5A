@@ -245,83 +245,184 @@ const renderList = () => {
     });
 };
 
+// =============================================
+// IMAGE UTILITIES
+// =============================================
+
+// Deterministic color index from attraction name
+const hashString = (str) => {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) {
+        hash = ((hash << 5) - hash) + str.charCodeAt(i);
+        hash |= 0;
+    }
+    return Math.abs(hash);
+};
+
+const PLACEHOLDER_PALETTES = [
+    { from: '#0d1117', to: '#161b22', accent: '#30363d', text: '#388bfd' },  // blue
+    { from: '#0f0e17', to: '#1a1828', accent: '#2d2b45', text: '#a855f7' },  // purple
+    { from: '#0d1a0e', to: '#1a281c', accent: '#243524', text: '#10b981' },  // emerald
+    { from: '#1a0d0d', to: '#281515', accent: '#3d2020', text: '#ef4444' },  // red
+    { from: '#1a130d', to: '#281d12', accent: '#3d2e1a', text: '#f59e0b' },  // amber
+    { from: '#0d1a1a', to: '#122828', accent: '#1a3d3d', text: '#06b6d4' },  // cyan
+    { from: '#171017', to: '#261a26', accent: '#3a2a3a', text: '#ec4899' },  // pink
+    { from: '#0a0f1a', to: '#0f1728', accent: '#1a2540', text: '#6366f1' },  // indigo
+];
+
+const generatePlaceholderSVG = (attr) => {
+    const p = PLACEHOLDER_PALETTES[hashString(attr.name) % PLACEHOLDER_PALETTES.length];
+    const province = (attr.location || '').split('·')[0].split(' ')[0];
+    const name = attr.name.length > 10 ? attr.name.substring(0, 10) + '…' : attr.name;
+
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="${p.from}"/>
+      <stop offset="100%" stop-color="${p.to}"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="${p.text}" stop-opacity="0"/>
+      <stop offset="50%" stop-color="${p.text}" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="${p.text}" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="${p.accent}" stroke-width="0.8"/>
+  </pattern>
+  <rect width="800" height="600" fill="url(#grid)" opacity="0.5"/>
+  <circle cx="400" cy="300" r="200" fill="none" stroke="${p.text}" stroke-width="0.5" opacity="0.12"/>
+  <circle cx="400" cy="300" r="150" fill="none" stroke="${p.text}" stroke-width="0.5" opacity="0.08"/>
+  <line x1="40" y1="40" x2="88" y2="40" stroke="${p.text}" stroke-width="1.5" opacity="0.35"/>
+  <line x1="40" y1="40" x2="40" y2="88" stroke="${p.text}" stroke-width="1.5" opacity="0.35"/>
+  <line x1="760" y1="40" x2="712" y2="40" stroke="${p.text}" stroke-width="1.5" opacity="0.35"/>
+  <line x1="760" y1="40" x2="760" y2="88" stroke="${p.text}" stroke-width="1.5" opacity="0.35"/>
+  <line x1="40" y1="560" x2="88" y2="560" stroke="${p.text}" stroke-width="1.5" opacity="0.35"/>
+  <line x1="40" y1="560" x2="40" y2="512" stroke="${p.text}" stroke-width="1.5" opacity="0.35"/>
+  <line x1="760" y1="560" x2="712" y2="560" stroke="${p.text}" stroke-width="1.5" opacity="0.35"/>
+  <line x1="760" y1="560" x2="760" y2="512" stroke="${p.text}" stroke-width="1.5" opacity="0.35"/>
+  <text x="400" y="258" font-family="'JetBrains Mono',monospace" font-size="11" fill="${p.text}" text-anchor="middle" opacity="0.55" letter-spacing="5">${province}</text>
+  <rect x="160" y="272" width="480" height="1" fill="url(#line)"/>
+  <text x="400" y="320" font-family="'PingFang SC','Noto Serif SC',serif" font-size="30" fill="#ffffff" text-anchor="middle" font-weight="600" opacity="0.88">${name}</text>
+  <rect x="160" y="335" width="480" height="1" fill="url(#line)" opacity="0.4"/>
+  <text x="400" y="362" font-family="'JetBrains Mono',monospace" font-size="9" fill="${p.text}" text-anchor="middle" opacity="0.35" letter-spacing="3">PHOTO UNAVAILABLE</text>
+</svg>`;
+    return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+};
+
+// ---- Image Cache (localStorage) ----
+const IMAGE_CACHE_KEY = 'china5a_img_cache_v1';
+let imageCache = {};
+try {
+    imageCache = JSON.parse(localStorage.getItem(IMAGE_CACHE_KEY) || '{}');
+} catch (_) { imageCache = {}; }
+
+const saveImageCache = () => {
+    try {
+        localStorage.setItem(IMAGE_CACHE_KEY, JSON.stringify(imageCache));
+    } catch (e) {
+        // Storage full — wipe and start fresh
+        localStorage.removeItem(IMAGE_CACHE_KEY);
+        imageCache = {};
+    }
+};
+
+// ---- Wikipedia search with smart suffix stripping ----
+const STRIP_SUFFIXES = [
+    '文化旅游景区', '生态文化旅游区', '旅游风景区', '旅游景区', '旅游区',
+    '风景名胜区', '风景区', '景观', '景区', '公园', '博物院', '博物馆',
+    '纪念馆', '遗址', '游览区', '观光区'
+];
+
+const getSearchTerms = (name) => {
+    const base = name.split(',')[0].trim();
+    const terms = [base];
+    for (const suffix of STRIP_SUFFIXES) {
+        if (base.endsWith(suffix)) {
+            const stripped = base.slice(0, -suffix.length);
+            if (stripped.length >= 2) terms.push(stripped);
+            break;
+        }
+    }
+    return [...new Set(terms)];
+};
+
+const fetchWikiImageUrl = async (searchTerm) => {
+    const tryWiki = async (lang) => {
+        const url = `https://${lang}.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(searchTerm)}&prop=pageimages&format=json&pithumbsize=800&origin=*`;
+        const res = await fetch(url);
+        const data = await res.json();
+        const pages = data?.query?.pages;
+        if (pages) {
+            const page = pages[Object.keys(pages)[0]];
+            if (page && page.thumbnail) return page.thumbnail.source;
+        }
+        return null;
+    };
+    return (await tryWiki('zh')) || (await tryWiki('en'));
+};
+
 // Modal Logic
 const openModal = (attr) => {
     state.activeId = attr.id;
-    
-    // Clear previous onerror/onload and remove skeleton
+
+    // Reset handlers
     elements.modalImg.onerror = null;
     elements.modalImg.onload = null;
-    elements.modalImg.classList.remove('img-loading');
+    elements.modalImg.classList.remove('img-loading', 'img-revealing');
 
-    // Onload handler to remove loading skeleton
-    elements.modalImg.onload = () => {
-        elements.modalImg.classList.remove('img-loading');
-    };
-
+    const cacheKey = String(attr.id);
     const isPlaceholder = !attr.image || attr.image.includes('placehold.co');
-    
-    if (!isPlaceholder) {
-        elements.modalImg.src = attr.image;
-    } else {
-        // Set temporary loading state
-        elements.modalImg.classList.add('img-loading');
-        elements.modalImg.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'; // Clean transparent pixel
-        
-        // Fetch from Wikipedia (Try Chinese, then English)
-        const searchName = attr.name.split(',')[0].trim();
-        const zhWikiUrl = `https://zh.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(searchName)}&prop=pageimages&format=json&pithumbsize=800&origin=*`;
-        
-        fetch(zhWikiUrl)
-            .then(res => res.json())
-            .then(data => {
-                if (data.query && data.query.pages) {
-                    const pages = data.query.pages;
-                    const pageId = Object.keys(pages)[0];
-                    if (pageId !== "-1" && pages[pageId].thumbnail) {
-                        if (state.activeId === attr.id) {
-                            elements.modalImg.src = pages[pageId].thumbnail.source;
-                        }
-                    } else {
-                        // Fallback to English Wikipedia
-                        const enWikiUrl = `https://en.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(searchName)}&prop=pageimages&format=json&pithumbsize=800&origin=*`;
-                        return fetch(enWikiUrl);
-                    }
-                }
-            })
-            .then(res => res ? res.json() : null)
-            .then(data => {
-                if (data && data.query && data.query.pages) {
-                    const pages = data.query.pages;
-                    const pageId = Object.keys(pages)[0];
-                    if (pageId !== "-1" && pages[pageId].thumbnail) {
-                        if (state.activeId === attr.id) {
-                            elements.modalImg.src = pages[pageId].thumbnail.source;
-                        }
-                    } else if (state.activeId === attr.id) {
-                        // Keep a more beautiful generic fallback if totally missing
-                        elements.modalImg.src = 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; 
-                    }
-                }
-            })
-            .catch(err => {
-                console.error('Failed to fetch image:', err);
-                if (state.activeId === attr.id) {
-                    elements.modalImg.src = 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
-                }
-            });
-    }
 
-    elements.modalImg.onerror = () => {
-        elements.modalImg.onerror = null; // Prevent infinite loop
-        elements.modalImg.src = 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
-    };
+    if (!isPlaceholder) {
+        // --- Has a pre-set real image URL ---
+        elements.modalImg.src = attr.image;
+        elements.modalImg.onerror = () => {
+            elements.modalImg.onerror = null;
+            elements.modalImg.src = generatePlaceholderSVG(attr);
+        };
+    } else if (imageCache[cacheKey]) {
+        // --- Cache hit: use stored wiki URL immediately ---
+        elements.modalImg.src = imageCache[cacheKey];
+        elements.modalImg.onerror = () => {
+            // Cached URL went stale
+            elements.modalImg.onerror = null;
+            delete imageCache[cacheKey];
+            saveImageCache();
+            elements.modalImg.src = generatePlaceholderSVG(attr);
+        };
+    } else {
+        // --- No image & no cache: show SVG art instantly, fetch wiki in background ---
+        elements.modalImg.src = generatePlaceholderSVG(attr);
+
+        const searchTerms = getSearchTerms(attr.name);
+        (async () => {
+            for (const term of searchTerms) {
+                try {
+                    const imgUrl = await fetchWikiImageUrl(term);
+                    if (imgUrl) {
+                        // Only update if user hasn't moved to another attraction
+                        if (state.activeId !== attr.id) return;
+                        elements.modalImg.classList.add('img-revealing');
+                        elements.modalImg.src = imgUrl;
+                        elements.modalImg.onload = () => {
+                            elements.modalImg.classList.remove('img-revealing');
+                        };
+                        // Persist to cache
+                        imageCache[cacheKey] = imgUrl;
+                        saveImageCache();
+                        return;
+                    }
+                } catch (_) { /* network error, try next term */ }
+            }
+            // All terms exhausted — SVG placeholder stays, no further action
+        })();
+    }
 
     elements.modalId.textContent = typeof attr.id === 'number' ? String(attr.id).padStart(2, '0') : '';
     elements.modalTitle.textContent = attr.name;
-    
     elements.modalLocation.textContent = attr.location;
-    
     elements.modalDesc.textContent = attr.description;
 
     updateModalButton();

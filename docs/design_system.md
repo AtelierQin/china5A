@@ -92,6 +92,15 @@
 </div>
 ```
 
+### 🖼️ The Art Placeholder (艺术占位图)
+当数据源缺失图片时，使用动态生成的 SVG 替代。
+*   **Grid Base**: 40px 背景网格。
+*   **Geometric Motif**: 居中的等大圆环 (Concentric Circles) 与 四角 L 型标记。
+*   **Typography**:
+    *   省份: `Mono Font`, `Tracking-widest`, `Opacity 0.5`.
+    *   名称: `Serif Font`, `Bold`, 居中。
+*   **Color Logic**: 基于名称 Hash 生成的 8 种高对比度暗色渐变方案。
+
 ---
 
 ## 4. Cursor/AI Rules (指令集)

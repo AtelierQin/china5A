@@ -749,16 +749,17 @@ body {
     to { transform: translateX(120%); opacity: 0; }
 }
 
-/* --- IMAGE SKELETON LOADING --- */
-.img-loading {
-    animation: pulse-bg 1.5s infinite ease-in-out;
-    background: linear-gradient(90deg, #18181b 25%, #27272a 50%, #18181b 75%);
-    background-size: 400% 100%;
+/* --- IMAGE TRANSITIONS --- */
+
+/* Smooth base transition for the modal image */
+.modal-image img {
+    transition: opacity 0.45s ease;
 }
 
-@keyframes pulse-bg {
-    0% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+/* Applied just before src swap so the new real photo fades in gracefully */
+.img-revealing {
+    opacity: 0 !important;
+    transition: none !important; /* instant to transparent, then CSS transitions back */
 }
 
 /* --- RESPONSIVE DESIGN (MOBILE) --- */
